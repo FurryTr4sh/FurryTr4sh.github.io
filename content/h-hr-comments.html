@@ -1,0 +1,170 @@
+<!-- Congrats! You just found an easter egg -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Заголовки, линии, комментарии</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	<body>
+		<div class="nav">
+			<a href="text-formatting.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="test-html-basics.html" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+		</div>
+
+		<h1>Заголовки в HTML-документе</h1>
+
+		<p>
+			В HTML используется 6 уровней заголовков, которые организованы по уровню важности: <b>&lt</b><b class="help-tag" title="Самый большой заголовок первого уровня">h1</b><b>&gt</b>, <b>&lt</b><b class="help-tag" title="Крупный заголовок второго уровня">h2</b><b>&gt</b>, <b>&lt</b><b class="help-tag" title="Средний заголовок третьего уровня">h3</b><b>&gt</b>, <b>&lt</b><b class="help-tag" title="Маленький заголовок четвёртого уровня">h4</b><b>&gt</b>, <b>&lt</b><b class="help-tag" title="Очень маленький заголовок пятого уровня">h5</b><b>&gt</b> и <b>&lt</b><b class="help-tag" title="Самый маленький заголовок шестого уровня">h6</b><b>&gt</b>.
+		</p>
+
+		<p>
+			В нижеприведённом коде использованы все 6 заголовков:
+		</p>
+
+		<div class="code">
+			&lt<font class="tags">html</font>&gt
+			<br>
+				<font class="space">&lt<font class="tags">head</font>&gt</font>
+				<br>
+					<font class="dblspace">&lt<font class="tags">title</font>&gt</font>Первая страница&lt/<font class="tags">title</font>&gt</font>
+					<br>
+				<font class="space">&lt/<font class="tags">head</font>&gt</font>
+				<br>
+				<font class="space">&lt<font class="tags">body</font>&gt</font>
+				<br>
+					<font class="dblspace">&lt<font class="tags">h1</font>&gt</font>Заголовок 1&lt/<font class="tags">h1</font>&gt</font>
+					<br>
+					<font class="dblspace">&lt<font class="tags">h2</font>&gt</font>Заголовок 2&lt/<font class="tags">h2</font>&gt</font>
+					<br>
+					<font class="dblspace">&lt<font class="tags">h3</font>&gt</font>Заголовок 3&lt/<font class="tags">h3</font>&gt</font>
+					<br>
+					<font class="dblspace">&lt<font class="tags">h4</font>&gt</font>Заголовок 4&lt/<font class="tags">h4</font>&gt</font>
+					<br>
+					<font class="dblspace">&lt<font class="tags">h5</font>&gt</font>Заголовок 5&lt/<font class="tags">h5</font>&gt</font>
+					<br>
+					<font class="dblspace">&lt<font class="tags">h6</font>&gt</font>Заголовок 6&lt/<font class="tags">h6</font>&gt</font>
+				<br>
+				<font class="space">&lt/<font class="tags">body</font>&gt</font>
+				<br>
+			&lt/<font class="tags">html</font>&gt
+		</div>
+
+		<p>
+			Результат:
+		</p>
+
+		<img src="../img/5_h.png" class="content-img">
+
+		<br><br>
+
+		<div class="hint">
+			<div class="div-img-margin">
+				<img src="../img/exclamation_mark.png" class="ex-mark">
+			</div>
+			<div>
+				Не рекомендуется использовать теги <b class="help" title="h1 – h6">заголовков</b>, если требуется просто выделить текст <b class="help" title="b">жирным</b> шрифтом. Поисковые системы придают заголовкам большое значение: используют их для индексации структуры страницы и её контента.
+			</div>
+		</div>
+
+		<br>
+
+		<h1>Горизонтальные линии</h1>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				Чтобы добавить в документ горизонтальную линию, используется тег <b>&lt</b><b class="help-tag" title='С англ. "Horizontal Rule" / "Thematic Break" – "Горизонтальная линия" / "Тематический разрыв"'>hr</b><b>&gt</b>.
+			</p>
+		</div>
+
+		<br>
+
+		<div class="code">
+			&lt<font class="tags">p</font>&gtПараграф текста.&lt/<font class="tags">p</font>&gt
+			<br>
+			&lt<font class="tags">hr</font>&gt
+			<br>
+			&lt<font class="tags">p</font>&gtЕщё один параграф текста.&lt/<font class="tags">p</font>&gt
+		</div>
+
+		<p>Результат:</p>
+
+		<img src="../img/6_hr.png" class="content-img">
+
+		<br><br>
+
+		<div class="hint">
+			<div class="div-img">
+				<img src="../img/exclamation_mark.png" class="ex-mark">
+			</div>
+			<div class="hint-text-center">
+				В HTML5 тег <b>&lt</b><b class="help-tag" title='Horizontal Rule / Thematic Break'>hr</b><b>&gt</b> обрамляет тематический разрыв.
+			</div>
+		</div>
+
+		<br>
+
+		<h1>Комментарии</h1>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				Комментарии не отображаются браузером, но они помогают в составлении документа и дают возможность добавлять описания, делать заметки, напоминания и прочее.
+			</p>
+		</div>
+
+		<br>
+
+		<div class="code">
+			<font class="comment">
+				&lt!-- Текст Вашего комментария --&gt
+			</font>
+		</div>
+
+		<p>
+			Для примера вставим строку комментария в наш предыдущий блок кода:
+		</p>
+
+		<div class="code">
+			&lt<font class="tags">p</font>&gtПараграф текста.&lt/<font class="tags">p</font>&gt
+			<br>
+			&lt<font class="tags">hr</font>&gt
+			<br>
+			<font class="comment">&lt!-- Текст Вашего комментария --&gt</font>
+			<br>
+			&lt<font class="tags">p</font>&gtЕщё один параграф текста.&lt/<font class="tags">p</font>&gt
+		</div>
+
+		<p>
+			Результат:
+		</p>
+
+		<img src="../img/6_hr.png" class="content-img">
+
+		<br><br>
+
+		<div class="hint">
+			<div class="div-img">
+				<img src="../img/exclamation_mark.png" class="ex-mark">
+			</div>
+			<div>
+				Как Вы видите, комментария в окне браузера не видно.
+				<br>
+				В открывающем теге ставится восклицательный знак (!), а в закрывающем теге нет.
+			</div>
+		</div>
+
+		<br><br>
+
+		<div class="nav">
+			<a href="text-formatting.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="test-html-basics.html" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+		</div>
+	</body>
+</html>

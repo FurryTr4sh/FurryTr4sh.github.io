@@ -1,0 +1,96 @@
+<!-- &lt используется для открывающей скобки < -->
+<!-- &gt используется для закрывающей скобки > -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Структура веб-страницы</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	<body>
+
+		<div class="nav">
+			<a href="what-is-html.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="head-tags.html" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+		</div>
+
+		<h1>Структура простого HTML-документа</h1>
+
+		<p>
+			Несмотря на то, что за годы существования HTML появилось много версий языка, основные его принципы остаются неизменными.
+		</p>
+
+		<p>
+			Структуру HTML-документа удобно рассмотреть на примере бутерброда. Подобно тому, как бутерброд часто имеет два кусочка хлеба, у HTML-документа есть два тега: открывающий и закрывающий.
+		</p>
+
+		<p>
+			Между этими тегами, как начинка бутерброда, между кусочками хлеба, помещается весь остальной код.
+		</p>
+
+		<div class="code">
+			&lt<font class="tags">html</font>&gt
+			<br>
+			<font class="space">...</font>
+			<br>
+			&lt/<font class="tags">html</font>&gt
+		</div>
+
+		<br>
+
+		<h2>Тег &lthead&gt</h2>
+
+		<p>
+			За открывающим тегом следует заголовок документа, который определяется открывающими и закрывающими тегами <b>&lt</b><b class="help-tag" title='Тег "головы" документа'>head</b><b>&gt</b>.
+		</p>
+		<p>
+			Заголовок содержит все <b>невизуальные элементы</b> HTML-документа, которые управляют отображением HTML-страницы.
+		</p>
+
+		<div class="code">
+			&lt<font class="tags">html</font>&gt
+			<br>
+			<font class="space">&lt<font class="tags">head</font>&gt...&lt/<font class="tags">head</font>&gt</font>
+			<br>
+			&lt/<font class="tags">html</font>&gt
+		</div>
+
+		<h2>Тег &ltbody&gt</h2>
+
+		<p>
+			За тегом заголовка <b>&lt</b><b class="help-tag" title='Тег "головы" документа'>head</b><b>&gt</b> следует тег тела документа <b>&lt</b><b class="help-tag" title='Тег "тела" документа'>body</b><b>&gt</b>. В него заключаются все элементы, отвечающие за визуальное и структурное оформление документа.
+		</p>
+		<p>
+			Заголовки, параграфы, списки, цитаты, изображения, ссылки – это лишь некоторые элементы, которые могут помещаться между тегами <b>&lt</b><b class="help-tag" title='Тег "тела" документа'>body</b><b>&gt</b>.
+		</p>
+
+		<div class="code">
+			&lt<font class="tags">html</font>&gt
+			<br>
+			<font class="space">&lt<font class="tags">head</font>&gt</font>
+			<br>
+			<font class="space">&lt/<font class="tags">head</font>&gt</font>
+			<br>
+			<font class="space">&lt<font class="tags">body</font>&gt</font>
+			<br>
+			<font class="space">&lt/<font class="tags">body</font>&gt</font>
+			<br>
+			&lt/<font class="tags">html</font>&gt
+		</div>
+		
+		<br><br>
+
+			<div class="nav">
+				<a href="what-is-html.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+				<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+				<a href="head-tags.html" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+			</div>
+
+	</body>
+</html>

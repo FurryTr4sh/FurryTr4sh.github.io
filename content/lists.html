@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<title>Списки</title>
+	</head>
+	<body>
+		<div class="nav">
+			<a href="links.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="#" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+		</div>
+
+		<h1>Списки</h1>
+
+		<h2>Нумерованные списки</h2>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				Нумерованный список начинается с тега <b title="Ordered List"><b>&lt</b><b class="help-tag">ol</b><b>&gt</b></b>, а каждый пункт указывается с помощью тега <b>&lt<b class="help-tag" title="List Items">li</b>&gt</b>.
+			</p>
+		</div>
+
+		<p>
+			Вот пример <b>нумерованного списка</b>:
+		</p>
+
+		<div class="code">
+			&lt<font class="tags">html</font>&gt
+			<br>
+				<font class="space">&lt<font class="tags">head</font>&gt</font>
+				<br>
+					<font class="dblspace">&lt<font class="tags">title</font>&gt</font>Первая страница&lt/<font class="tags">title</font>&gt</font>
+					<br>
+				<font class="space">&lt/<font class="tags">head</font>&gt</font>
+				<br>
+				<font class="space">&lt<font class="tags">body</font>&gt</font>
+				<br>
+					<font class="dblspace">
+						&lt<font class="tags">ol</font>&gt
+					</font>
+					<br>
+						<font class="trplspace">&lt<font class="tags">li</font>&gtПервый пункт&lt/<font class="tags">li</font>&gt</font>
+						<br>
+						<font class="trplspace">&lt<font class="tags">li</font>&gtВторой пункт&lt/<font class="tags">li</font>&gt</font>
+						<br>
+						<font class="trplspace">&lt<font class="tags">li</font>&gtТретий пункт&lt/<font class="tags">li</font>&gt</font>
+						<br>
+					<font class="dblspace">
+						&lt/<font class="tags">ol</font>&gt
+					</font>
+					<br>
+				<font class="space">&lt/<font class="tags">body</font>&gt</font>
+				<br>
+			&lt/<font class="tags">html</font>&gt
+		</div>
+
+		<p>
+			Результат:
+		</p>
+
+		<img src="../img/11_ol.png" class="content-img">
+
+		<br><br>
+
+		<div class="hint">
+			<div class="div-img">
+				<img src="../img/exclamation_mark.png" class="ex-mark">
+			</div>
+			<div class="hint-text-center">
+				Пункты списка будут автоматически пронумерованы начиная с единицы.
+				<br>
+				Однако Вы всегда можете начать нумерацию списка с любого числа, указав в теге <b>&lt</b><b class="help-tag" title="List Items">li</b><b>&gt</b> атрибут <b class="help-attr" title="значение">value</b> с любым числовым значением.
+				<br><br>
+				Вы можете использовать нумерацию: 
+				<ol>
+					<li type="1">
+						Арабскими цифрами (по умолчанию). При необходимости – указав в теге <b>&lt</b><b class="help-tag" title="List Items">li</b><b>&gt</b> атрибут <b class="help-attr" title="тип">type</b> со значением <b class="help-value" title="далее 2, 3 и т. д.">1</b>;
+					</li>
+
+					<br>
+
+					<li type="A">
+						Заглавными или строчными латинскими буквами, указав в теге <b>&lt</b><b class="help-tag" title="List Items">li</b><b>&gt</b> атрибут <b class="help-attr" title="тип">type</b> со значением <b class="help-value" title="далее B, C и т. д.">A</b> или <b class="help-value" title="далее b, c и т. д.">a</b> соответственно;
+					</li>
+
+					<br>
+
+					<li type="I">
+						Заглавными или строчными римскими буквами, указав в теге <b>&lt</b><b class="help-tag" title="List Items">li</b><b>&gt</b> атрибут <b class="help-attr" title="тип">type</b> со значением <b class="help-value" title="далее II, III и т. д.">I</b> или <b class="help-value" title="далее ii, iii и т. д.">i</b> соответственно.
+					</li>
+				</ol>
+			</div>
+		</div>
+		
+		<br>
+
+		<h2>Ненумерованные списки</h2>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				Ненумерованный список начинается с тега <b>&lt<b class="help-tag" title="Unordered List">ul</b>&gt</b>.
+			</p>
+		</div>
+
+		<br>
+
+		<div class="code">
+			&lt<font class="tags">html</font>&gt
+			<br>
+				<font class="space">&lt<font class="tags">head</font>&gt</font>
+				<br>
+					<font class="dblspace">&lt<font class="tags">title</font>&gt</font>Первая страница&lt/<font class="tags">title</font>&gt</font>
+					<br>
+				<font class="space">&lt/<font class="tags">head</font>&gt</font>
+				<br>
+				<font class="space">&lt<font class="tags">body</font>&gt</font>
+				<br>
+					<font class="dblspace">
+						&lt<font class="tags">ul</font>&gt
+					</font>
+					<br>
+						<font class="trplspace">&lt<font class="tags">li</font>&gtПервый пункт&lt/<font class="tags">li</font>&gt</font>
+						<br>
+						<font class="trplspace">&lt<font class="tags">li</font>&gtВторой пункт&lt/<font class="tags">li</font>&gt</font>
+						<br>
+						<font class="trplspace">&lt<font class="tags">li</font>&gtТретий пункт&lt/<font class="tags">li</font>&gt</font>
+						<br>
+					<font class="dblspace">
+						&lt/<font class="tags">ul</font>&gt
+					</font>
+					<br>
+				<font class="space">&lt/<font class="tags">body</font>&gt</font>
+				<br>
+			&lt/<font class="tags">html</font>&gt
+		</div>
+
+		<p>
+			Результат:
+		</p>
+
+		<img src="../img/12_ul.png" class="content-img">
+
+		<br><br>
+
+		<div class="hint">
+			<div class="div-img">
+				<img src="../img/exclamation_mark.png" class="ex-mark">
+			</div>
+			<div class="hint-text-center">
+				Каждый пункт списка будет отмечен маркером.
+				<br>
+				Вы можете изменить маркер, указав в теге <b>&lt</b><b class="help-tag" title="List Items">li</b><b>&gt</b> атрибут <b class="help-attr" title="тип">type</b> с любым из следующих типов маркеров: 
+					<ul>
+						<li type="disc">
+							<b class="help-value" title="кружок с заливкой">disc</b> (по умолчанию). При необходимости – указав в теге <b>&lt</b><b class="help-tag" title="List Items">li</b><b>&gt</b> атрибут <b class="help-attr" title="тип">type</b> со значением <b class="help-value" title="кружок с заливкой">disc</b>;
+						</li>
+
+						<br>
+
+						<li type="circle">
+							<b class="help-value" title="кружок без заливки">circle</b>;
+						</li>
+
+						<br>
+
+						<li type="square">
+							<b class="help-value" title="квадрат">square</b>.
+						</li>
+					</ul>
+			</div>
+		</div>
+
+		<br><br>
+
+		<div class="nav">
+			<a href="links.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="#" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+		</div>
+	</body>
+</html>

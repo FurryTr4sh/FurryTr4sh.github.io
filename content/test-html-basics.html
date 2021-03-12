@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<title>Промежуточный тест. Основы HTML</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<style type="text/css">
+			.a {
+				background-color: green;
+			}
+			label {
+				font-family: Verdana;
+			}
+			button {
+				font-family: Verdana;
+			}
+			h3 {
+				font-family: Verdana;
+				font-size: 17px;
+			}
+		</style>
+		<script type="text/javascript" src="../jquery-3.5.1.js"></script>
+		<script type="text/javascript" src="scripts/script-html-basics.js"></script>
+	</head>
+	<body>
+
+		<script type="text/javascript">
+
+			$(function() {	// До тех пор, пока все radio не будут отмечены, кнопка проверки результатов будет неактивной
+    			var button = $('#CheckResult').prop('disabled', true);
+    			var radios = $('input[type="radio"]');
+    			var arr = $.map(radios, function(el) { 
+                	return el.name; 
+              	});
+
+				   var groups = $.grep(arr, function(v, k) {
+            		return $.inArray(v ,arr) === k;
+    			}).length;
+
+    			radios.on('change', function () {
+        			button.prop('disabled', radios.filter(':checked').length < groups);
+    			});
+
+    			var checked_radios = $('input[type="radio"]');
+    			var amount_of_checked = checked_radios.length;
+			});
+
+			$(function() { // Кнопка сброса выбранных radio будет активна только до того момента, пока не будут отмечены все radio
+    			var button = $('#ClearInput').prop('disabled', false);
+    			var radios = $('input[type="radio"]');
+    			var arr = $.map(radios, function(el) { 
+                	return el.name; 
+              	});
+
+				   var groups = $.grep(arr, function(v, k) {
+            		return $.inArray(v ,arr) === k;
+    			}).length;
+
+    			radios.on('change', function () {
+        			button.prop('disabled', radios.filter(':checked').length === groups);
+    			});
+
+    			var checked_radios = $('input[type="radio"]');
+    			var amount_of_checked = checked_radios.length;
+			});
+		</script>
+
+		<div class="nav">
+			<a href="h-hr-comments.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="attributes.html" class="navlink"><div class="navBlock" style="font-size: 20px;">Продолжить ⇒</div></a>
+		</div>
+
+		<form>
+			<h3>1. С помощью какого тега делается перенос строки?</h3>
+			<label id="l16">
+				<input type="radio" name="radio1" id="r16">&ltbreak&gt
+			</label>
+			<br>
+			<label id="l17">
+				<input type="radio" name="radio1" id="r17">&ltbr&gt
+			</label>
+			<br>
+			<label id="l18">
+				<input type="radio" name="radio1" id="r18">&ltlb&gt
+			</label>
+			<br>
+			<label id="l19">
+				<input type="radio" name="radio1" id="r19">&ltlinebreak&gt
+			</label>
+			<br>
+
+			<br>
+
+			<h3>2. Какой тег используется для обозначения жирного шрифта?</h3>
+			<label id="l20">
+				<input type="radio" name="radio2" id="r20">&lti&gt
+			</label>
+			<br>
+			<label id="l21">
+				<input type="radio" name="radio2" id="r21">&ltb&gt
+			</label>
+			<br>
+			<label id="l22">
+				<input type="radio" name="radio2" id="r22">&ltbig&gt
+			</label>
+			<br>
+			<label id="l23">
+				<input type="radio" name="radio2" id="r23">&ltsup&gt
+			</label>
+			<br>
+
+			<br>
+
+			<h3>3. Какой из нижеперечисленных тегов создаст заголовок?</h3>
+			<label id="l24">
+				<input type="radio" name="radio3" id="r24">&ltheader&gt
+			</label>
+			<br>
+			<label id="l25">
+				<input type="radio" name="radio3" id="r25">&lthead&gt
+			</label>
+			<br>
+			<label id="l26">
+				<input type="radio" name="radio3" id="r26">&lth1&gt
+			</label>
+			<br>
+			<label id="l27">
+				<input type="radio" name="radio3" id="r27">&lttitle&gt
+			</label>
+			<br>
+
+			<br>
+
+			<h3>4. Как пишется комментарий?</h3>
+			<label id="l28">
+				<input type="radio" name="radio4" id="r28">&lt-  -&gt
+			</label>
+			<br>
+			<label id="l29">
+				<input type="radio" name="radio4" id="r29">&lt--  --&gt
+			</label>
+			<br>
+			<label id="l30">
+				<input type="radio" name="radio4" id="r30">&lt!-  -&gt
+			</label>
+			<br>
+			<label id="l31">
+				<input type="radio" name="radio4" id="r31">&lt!--  --&gt
+			</label>
+			<br><br>
+
+			<button id="CheckResult" type="button" disabled onclick="answer()">Проверить результат</button>
+			<button id="ClearInput" type="reset">Очистить</button>
+		</form>
+
+	</body>
+</html>

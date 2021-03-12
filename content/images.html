@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Изображения</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	<body>
+
+		<div class="nav">
+			<a href="attributes.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="links.html" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+		</div>
+
+		<h1>
+			Тег &ltimg&gt
+		</h1>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				Тег <b>&lt</b><b class="help-tag" title='Сокращение от англ. "image" – "изображение"'>img</b><b>&gt</b> используется для вставки изображения. Он содержит только атрибуты и <b>не требует закрывающего тега</b>.
+			</p>
+
+			<p class="p-div-middle">
+				Ссылка на изображение (веб-адрес) добавляется с помощью атрибута <b class="help-attr" title='Сокращение от англ. "source" – "источник"'>src</b>.
+			</p>
+
+			<p class="p-div-bottom">
+				Синтаксис для добавления изображения выглядит следующим образом:
+			</p>
+		</div>
+
+		<br>
+
+		<div class="code">
+			&lt<font class="tags">img</font> <font class="attr">src</font>=<font class="attr-value">"image.jpg"</font>&gt
+		</div>
+
+		<br>
+
+		<div class="hint">
+			<div class="div-img">
+				<img src="../img/exclamation_mark.png" class="ex-mark">
+			</div>
+			<div>
+				Атрибут <b class="help-attr" title="Alternative Text">alt</b> устанавливает альтернативный текст для изображений, отображающийся при наведении на них курсора или же выводящийся на месте изображения, если оно по какой-то причине не отобразится на странице.
+			</div>
+		</div>
+
+		<br>
+
+		<h1>Местоположение изображения</h1>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				Местоположение изображения указывается между кавычками атрибута <b class="help-attr" title='Сокращение от англ. "source" – "источник"'>src</b>.
+			</p>
+		</div>
+
+		<p>
+			Если у Вас, к примеру, фотография с названием "picture.jpg", которая находится в одной папке с HTML-файлом, код будет выглядеть следующим образом:
+		</p>
+
+		<div class="code">
+			&lt<font class="tags">html</font>&gt
+			<br>
+				<font class="space">&lt<font class="tags">head</font>&gt</font>
+				<br>
+					<font class="dblspace">&lt<font class="tags">title</font>&gt</font>Первая страница&lt/<font class="tags">title</font>&gt</font>
+					<br>
+				<font class="space">&lt/<font class="tags">head</font>&gt</font>
+				<br>
+				<font class="space">&lt<font class="tags">body</font>&gt</font>
+				<br>
+					<font class="dblspace">
+						&lt<font class="tags">img <font class="attr">src</font></font>=<font class="attr-value">"picture.jpg"</font>&gt
+					</font>
+					<br>
+				<font class="space">&lt/<font class="tags">body</font>&gt</font>
+				<br>
+			&lt/<font class="tags">html</font>&gt
+		</div>
+
+		<br>
+
+		<h1>Изменение размера изображения</h1>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				Для указания размера изображения используются атрибуты <b class="help-attr" title="ширина">width</b> и <b class="help-attr" title="высота">height</b>.
+			</p>
+		</div>
+
+		<p>
+			Размер может быть указан в <b class="help-value" title="пиксели">px</b>, <b class="help-value" title="проценты">%</b> или <b class="help-value" title="единица размера текущего шрифта">em</b>:
+		</p>
+
+		<div class="code">
+			&lt<font class="tags">html</font>&gt
+			<br>
+				<font class="space">&lt<font class="tags">head</font>&gt</font>
+				<br>
+					<font class="dblspace">&lt<font class="tags">title</font>&gt</font>Первая страница&lt/<font class="tags">title</font>&gt</font>
+					<br>
+				<font class="space">&lt/<font class="tags">head</font>&gt</font>
+				<br>
+				<font class="space">&lt<font class="tags">body</font>&gt</font>
+				<br>
+					<font class="dblspace">
+						&lt<font class="tags">img <font class="attr">src</font></font>=<font class="attr-value">"picture.jpg"</font> <font class="attr">width</font>=<font class="attr-value">"150px"</font> <font class="attr">height</font>=<font class="attr-value">"150px"</font>&gt
+					</font>
+					<br>
+				<font class="space">&lt/<font class="tags">body</font>&gt</font>
+				<br>
+			&lt/<font class="tags">html</font>&gt
+		</div>
+
+		<br>
+
+		<div class="hint">
+			<div class="div-img">
+				<img src="../img/exclamation_mark.png" class="ex-mark">
+			</div>
+			<div>
+				Загрузка изображений требует времени.
+				<br>
+				Помните: использование изображений больших размеров может значительно замедлить загрузку Вашей страницы!
+			</div>
+		</div>
+
+		<br>
+
+		<h1>Рамка вокруг изображения</h1>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				По умолчанию изображение не имеет рамки.
+			</p>
+		</div>
+
+		<p>
+			Рамка добавляется с помощью атрибута <b class="help-attr" title="граница/рамка">border</b>, который помещается внутрь тега изображения:
+		</p>
+
+		<div class="code">
+			&lt<font class="tags">img</font> <font class="attr">src</font>=<font class="attr-value">"picture.jpg"</font> <font class="attr">height</font>=<font class="attr-value">"150px"</font> <font class="attr">width</font>=<font class="attr-value">"150px"</font> <font class="attr">border</font>=<font class="attr-value">"1px"</font>&gt
+		</div>
+
+		<br>
+
+		<div class="hint">
+			<div class="div-img">
+				<img src="../img/exclamation_mark.png" class="ex-mark">
+			</div>
+			<div class="hint-text-center">
+				Помимо изображений, рамку могут иметь и множество других тегов.
+			</div>
+		</div>
+
+		<br><br>
+
+		<div class="nav">
+			<a href="attributes.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="links.html" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+		</div>
+
+	</body>
+</html>

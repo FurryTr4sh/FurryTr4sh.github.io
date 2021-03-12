@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<style type="text/css">
+			.hint-link {
+				text-decoration: none;
+				color: white;
+				font-size: 16px;
+			}
+			.hint-link:hover {
+				text-decoration: underline;
+				color: white;
+				font-size: 17px;
+			}
+		</style>
+		<title>Ссылки</title>
+	</head>
+	<body>
+		<div class="nav">
+			<a href="images.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="lists.html" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+		</div>
+
+		<h1>Ссылки</h1>
+
+		<h2>Тег &lta&gt</h2>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				Ссылки – важные кирпичики любой веб-страницы. Вы можете прикрепить ссылки к тексту или изображению, чтобы пользователь при нажатии на них был перенаправлен на другую веб-страницу (или к другому файлу).
+			</p>
+
+			<p class="p-div-bottom" style="padding-top: 0px;">
+				В синтаксисе HTML ссылки обозначаются с помощью тега <b>&lt</b><b class="help-tag" title='От англ. "anchor" – "якорь"'>a</b><b>&gt</b>.
+			</p>
+		</div>
+
+		<p>
+			Атрибут <b class="help-attr" title='Сокращение от англ. "Hypertext REFerence"'>href</b> служит для указания самого адреса ссылки:
+		</p>
+
+		<div class="code">
+			&lt<font class="tags">a</font> <font class="attr">href</font>=<font class="attr-value">""</font>&gt&lt<font class="tags">a</font>&gt
+		</div>
+
+		<br>
+
+		<div class="hint">
+			<div class="div-img">
+				<img src="../img/exclamation_mark.png" class="ex-mark">
+			</div>
+			<div>
+				Чтобы сделать изображение ссылкой на другой документ, просто поместите тег <b>&lt</b><b class="help-tag" title='Сокращение от англ. "image" – "изображение"'>img</b><b>&gt</b> внутри тега <b>&lt</b><b class="help-tag" title='От англ. "anchor" – "якорь"'>a</b><b>&gt</b>.
+			</div>
+		</div>
+
+		<br>
+
+		<h2>Атрибут target</h2>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				Необязательный атрибут <b class="help-attr" title='С англ. "цель"'>target</b> указывает, где нужно открыть привязанный документ.
+			</p>
+			<p class="p-div-bottom" style="padding-top: 0px;">
+				Задав атрибуту значение <b class="help-value" title='С англ. "пустой"'>_blank</b>, ссылка будет открываться в новом окне или новой вкладке.
+			</p>
+		</div>
+
+		<br>
+
+		<div class="code">
+			&lt<font class="tags">a</font> <font class="attr">href</font>=<font class="attr-value">"https://irkpo.ru"</font> <font class="attr">target</font>=<font class="attr-value">"_blank"</font>&gt<br>
+				<font class="space">Ссылка на сайт моего колледжа</font><br>
+			&lt<font class="tags">a</font>&gt
+		</div>
+
+		<br>
+
+		<div class="hint">
+			<div class="div-img">
+				<img src="../img/exclamation_mark.png" class="ex-mark">
+			</div>
+			<div class="hint-text-center">
+				Для ссылок на внешние ресурсы обязательно указание протокола <a href="https://ru.wikipedia.org/wiki/HTTP" class="hint-link" title="Протокол передачи данных в виде гипертекстовых документов" target="_blank">"http://"</a> или <a href="https://ru.wikipedia.org/wiki/HTTPS" class="hint-link" title="Расширение протокола HTTP для безопасной передачи данных, поддерживающий технологию шифрования TLS/SSL" target="_blank">"https://"</a>.
+			</div>
+		</div>
+
+		<br><br>
+
+		<div class="nav">
+			<a href="images.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="lists.html" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+		</div>
+
+	</body>
+</html>
