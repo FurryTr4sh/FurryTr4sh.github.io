@@ -12,10 +12,8 @@
 
 			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
 
-			<a href="#" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+			<a href="inline-and-block-elements.html" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
 		</div>
-
-		<div class="content">
 
 		<h1>Таблицы</h1>
 
@@ -36,7 +34,7 @@
 		</p>
 
 		<div class="code">
-			&lt<font class="tags">html</font>&gt
+			&lt<font class="tags">table</font>&gt
 			<br>
 				<font class="space">&lt<font class="tags">tr</font>&gt</font>
 				<br>
@@ -48,7 +46,7 @@
 					<br>
 				<font class="space">&lt/<font class="tags">tr</font>&gt</font>
 			<br>
-			&lt/<font class="tags">html</font>&gt
+			&lt/<font class="tags">table</font>&gt
 		</div>
 
 		<br>
@@ -70,36 +68,121 @@
 
 		<div class="div-p">
 			<p class="p-div-top">
-				С помощью атрибута <b>border</b> можно заключить таблицу в рамку:
+				С помощью атрибута <b class="help-attr" title="граница / рамка">border</b> можно заключить таблицу в рамку:
 			</p>
 		</div>
 
 		<br>
 
 		<div class="code">
-			&lt<font class="tags">html</font>&gt
-			<br>
-				<font class="space">&lt<font class="tags">tr</font>&gt</font>
-				<br>
-					<font class="dblspace">&lt<font class="tags">td</font>&gt</font>Красный<font>&lt/<font class="tags">td</font>&gt</font>
-					<br>
-					<font class="dblspace">&lt<font class="tags">td</font>&gt</font>Синий<font>&lt/<font class="tags">td</font>&gt</font>
-					<br>
-					<font class="dblspace">&lt<font class="tags">td</font>&gt</font>Зелёный<font>&lt/<font class="tags">td</font>&gt</font>
-					<br>
-				<font class="space">&lt/<font class="tags">tr</font>&gt</font>
-				<br>
-				<font class="space">&lt<font class="tags">tr</font>&gt</font>
-				<br>
-					<font class="dblspace">&lt<font class="tags">td</font>&gt</font>Красный<font>&lt/<font class="tags">td</font>&gt</font>
-					<br>
-					<font class="dblspace">&lt<font class="tags">td</font>&gt</font>Синий<font>&lt/<font class="tags">td</font>&gt</font>
-					<br>
-				<font class="space">&lt/<font class="tags">tr</font>&gt</font>
-			<br>
-			&lt/<font class="tags">html</font>&gt
+			&lt<font class="tags">table</font> <font class="attr">border</font>=<font class="attr-value">"2"</font>&gt
 		</div>
 
+		<br>
+
+		<div class="hint">
+			<div class="div-img">
+				<img src="../img/exclamation_mark.png" class="ex-mark">
+			</div>
+			<div class="hint-text-center">
+				Значение толщины границы не обязательно явно указывать в <b class="help-value" title="пиксели">px</b>, пиксели используются по умолчанию.
+			</div>
+		</div>
+
+		<br>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				Ячейка таблицы может охватывать два или более столбца при помощи атрибута <b class="help-attr" title='С англ. "Columns Span" – количество столбцов в ячейке'>colspan</b>:
+			</p>
+		</div>
+
+		<br>
+
+		<div class="code">
+			&lt<font class="tags">table</font> <font class="attr">border</font>=<font class="attr-value">"2"</font>&gt
+			<br>
+				<font class="space">&lt<font class="tags">tr</font>&gt</font>
+				<br>
+					<font class="dblspace">&lt<font class="tags">td</font>&gt</font>1 ячейка<font>&lt/<font class="tags">td</font>&gt</font>
+					<br>
+					<font class="dblspace">&lt<font class="tags">td</font>&gt</font>2 ячейка<font>&lt/<font class="tags">td</font>&gt</font>
+					<br>
+					<font class="dblspace">&lt<font class="tags">td</font>&gt</font>3 ячейка<font>&lt/<font class="tags">td</font>&gt</font>
+					<br>
+				<font class="space">&lt/<font class="tags">tr</font>&gt</font>
+				<br>
+				<font class="space">&lt<font class="tags">tr</font>&gt</font>
+				<br>
+					<font class="dblspace">&lt<font class="tags">td</font>&gt</font>&lt<font class="tags">br</font>&gt<font>&lt/<font class="tags">td</font>&gt</font>
+					<br>
+					<font class="dblspace">&lt<font class="tags">td</font> <font class="attr">colspan</font>=<font class="attr-value">"2"</font>&gt&lt/<font class="tags">td</font>&gt</font>
+					<br>
+				<font class="space">&lt/<font class="tags">tr</font>&gt</font>
+				<br>
+			&lt/<font class="tags">table</font>&gt
+		</div>
+
+		<p>
+			Результат:
+		</p>
+
+		<div class="img-container">
+			<img src="../img/13_colspan.png" class="content-img">
+		</div>
+
+		<br>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				Помимо атрибута <b class="help-attr" title='С англ. "Columns Span" – количество столбцов в ячейке'>colspan</b> существует атрибут <b class="help-attr" title='С англ. "Rows Span" – количество рядов в ячейке'>rowspan</b>, делающий то же самое, но вместо столбцов ячейка будет занимать несколько рядов, иными словами – будет увеличиваться в высоту.
+			</p>
+		</div>
+
+		<p>
+			Например:
+		</p>
+
+		<div class="code">
+			&lt<font class="tags">table</font> <font class="attr">border</font>=<font class="attr-value">"2"</font>&gt
+			<br>
+				<font class="space">&lt<font class="tags">tr</font>&gt</font>
+				<br>
+					<font class="dblspace">&lt<font class="tags">td</font>&gt</font>1 ячейка<font>&lt/<font class="tags">td</font>&gt</font>
+					<br>
+					<font class="dblspace">&lt<font class="tags">td</font>&gt</font>2 ячейка<font>&lt/<font class="tags">td</font>&gt</font>
+					<br>
+					<font class="dblspace">&lt<font class="tags">td</font>&gt</font>3 ячейка<font>&lt/<font class="tags">td</font>&gt</font>
+					<br>
+				<font class="space">&lt/<font class="tags">tr</font>&gt</font>
+				<br>
+				<font class="space">&lt<font class="tags">tr</font>&gt</font>
+				<br>
+					<font class="dblspace">&lt<font class="tags">td</font>&gt</font>&lt<font class="tags">br</font>&gt<font>&lt/<font class="tags">td</font>&gt</font>
+					<br>
+					<font class="dblspace">&lt<font class="tags">td</font> <font class="attr">rowspan</font>=<font class="attr-value">"2"</font>&gt&lt/<font class="tags">td</font>&gt</font>
+					<br>
+					<font class="dblspace">&lt<font class="tags">td</font>&gt</font>&lt<font class="tags">br</font>&gt<font>&lt/<font class="tags">td</font>&gt</font>
+					<br>
+				<font class="space">&lt/<font class="tags">tr</font>&gt</font>
+				<br>
+				<font class="space">&lt<font class="tags">tr</font>&gt</font>
+				<br>
+					<font class="dblspace">&lt<font class="tags">td</font>&gt</font>&lt<font class="tags">br</font>&gt<font>&lt/<font class="tags">td</font>&gt</font>
+					<br>
+					<font class="dblspace">&lt<font class="tags">td</font>&gt</font>&lt<font class="tags">br</font>&gt<font>&lt/<font class="tags">td</font>&gt</font>
+					<br>
+				<font class="space">&lt/<font class="tags">tr</font>&gt</font>
+				<br>
+			&lt/<font class="tags">table</font>&gt
+		</div>
+
+		<p>
+			Результат:
+		</p>
+
+		<div class="img-container">
+			<img src="../img/14_rowspan.png" class="content-img">
 		</div>
 
 		<br><br>
@@ -109,7 +192,7 @@
 
 			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
 
-			<a href="#" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+			<a href="inline-and-block-elements.html" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
 		</div>
 	</body>
 </html>
