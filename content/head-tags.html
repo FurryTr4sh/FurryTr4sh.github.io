@@ -2,14 +2,22 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Теги head</title>
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		<style type="text/css">
+			@media (pointer: fine) {
+				.navlink {
+					font-size: 26px;
+				}
+			}
+			@media (pointer: coarse) {
+				.navlink {
+					font-size: 20px;
+				}
+			}
 			.nav {
 				height: 70px;
-			}
-			.navlink {
-				font-size: 26px;
 			}
 		</style>
 	</head>
@@ -50,6 +58,8 @@
 
 		<p>Получится следующее:</p>
 
-		<img src="../img/1_title.png" class="content-img">
+		<div class="img-container">
+			<img src="../img/1_title.png" class="content-img">
+		</div>
 	</body>
 </html>

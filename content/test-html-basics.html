@@ -1,23 +1,17 @@
 <!DOCTYPE html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Промежуточный тест. Основы HTML</title>
 		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" type="text/css" href="test-styles.css">
+
 		<style type="text/css">
-			.a {
-				background-color: green;
-			}
-			label {
-				font-family: Verdana;
-			}
-			button {
-				font-family: Verdana;
-			}
-			h3 {
-				font-family: Verdana;
-				font-size: 17px;
+			.nav {
+				height: 50px;
 			}
 		</style>
+
 		<script type="text/javascript" src="../jquery-3.5.1.js"></script>
 		<script type="text/javascript" src="scripts/script-html-basics.js"></script>
 	</head>
@@ -151,9 +145,20 @@
 			</label>
 			<br><br>
 
-			<button id="CheckResult" type="button" disabled onclick="answer()">Проверить результат</button>
-			<button id="ClearInput" type="reset">Очистить</button>
+			<div class="buttons-div">
+				<button id="CheckResult" type="button" disabled onclick="answer()">Проверить результат</button>
+				<button id="ClearInput" type="reset">Очистить</button>
+			</div>
 		</form>
 
+		<br>
+
+		<div class="nav nav-mobile">
+			<a href="h-hr-comments.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="attributes.html" class="navlink"><div class="navBlock" style="font-size: 20px;">Продолжить ⇒</div></a>
+		</div>
 	</body>
 </html>

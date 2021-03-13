@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<title>Таблицы</title>
+	</head>
+	<body>
+		<div class="nav">
+			<a href="lists.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="#" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+		</div>
+
+		<div class="content">
+
+		<h1>Таблицы</h1>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				Для добавления таблиц используется тег <b>&lt</b><b class="help-tag" title="таблица">table</b><b>&gt</b>.
+			</p>
+			<p class="p-div-middle">
+				Таблицы разделяются на строки при помощи тега <b>&lt</b><b class="help-tag" title="Table Row / Строка таблицы">tr</b><b>&gt</b>.
+			</p>
+			<p class="p-div-bottom">
+				Строки таблицы разделяются на столбцы при помощи тега <b>&lt</b><b class="help-tag" title="Table Data / Ячейка таблицы">td</b><b>&gt</b>.
+			</p>
+		</div>
+
+		<p>
+			Ниже пример таблицы с одной строкой и тремя столбцами:
+		</p>
+
+		<div class="code">
+			&lt<font class="tags">html</font>&gt
+			<br>
+				<font class="space">&lt<font class="tags">tr</font>&gt</font>
+				<br>
+					<font class="dblspace">&lt<font class="tags">td</font>&gt</font><font>&lt/<font class="tags">td</font>&gt</font>
+					<br>
+					<font class="dblspace">&lt<font class="tags">td</font>&gt</font><font>&lt/<font class="tags">td</font>&gt</font>
+					<br>
+					<font class="dblspace">&lt<font class="tags">td</font>&gt</font><font>&lt/<font class="tags">td</font>&gt</font>
+					<br>
+				<font class="space">&lt/<font class="tags">tr</font>&gt</font>
+			<br>
+			&lt/<font class="tags">html</font>&gt
+		</div>
+
+		<br>
+
+		<div class="hint">
+			<div class="div-img">
+				<img src="../img/exclamation_mark.png" class="ex-mark">
+			</div>
+			<div class="hint-text-center">
+				Теги <b>&lt</b><b class="help-tag" title="Table Data / Ячейка таблицы">td</b><b>&gt</b> выступают в качестве контейнеров для содержимого таблицы.
+				<br>
+				В них можно заключать множество HTML-элементов: текст, изображения, списки, другие таблицы и прочее.
+			</div>
+		</div>
+
+		<br>
+
+		<h1>Атрибуты border и colspan</h1>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				С помощью атрибута <b>border</b> можно заключить таблицу в рамку:
+			</p>
+		</div>
+
+		<br>
+
+		<div class="code">
+			&lt<font class="tags">html</font>&gt
+			<br>
+				<font class="space">&lt<font class="tags">tr</font>&gt</font>
+				<br>
+					<font class="dblspace">&lt<font class="tags">td</font>&gt</font>Красный<font>&lt/<font class="tags">td</font>&gt</font>
+					<br>
+					<font class="dblspace">&lt<font class="tags">td</font>&gt</font>Синий<font>&lt/<font class="tags">td</font>&gt</font>
+					<br>
+					<font class="dblspace">&lt<font class="tags">td</font>&gt</font>Зелёный<font>&lt/<font class="tags">td</font>&gt</font>
+					<br>
+				<font class="space">&lt/<font class="tags">tr</font>&gt</font>
+				<br>
+				<font class="space">&lt<font class="tags">tr</font>&gt</font>
+				<br>
+					<font class="dblspace">&lt<font class="tags">td</font>&gt</font>Красный<font>&lt/<font class="tags">td</font>&gt</font>
+					<br>
+					<font class="dblspace">&lt<font class="tags">td</font>&gt</font>Синий<font>&lt/<font class="tags">td</font>&gt</font>
+					<br>
+				<font class="space">&lt/<font class="tags">tr</font>&gt</font>
+			<br>
+			&lt/<font class="tags">html</font>&gt
+		</div>
+
+		</div>
+
+		<br><br>
+
+		<div class="nav">
+			<a href="lists.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="#" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+		</div>
+	</body>
+</html>

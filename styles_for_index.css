@@ -1,15 +1,32 @@
 body {
 	background-color: #181818;
 }
-h2 {
-	margin: auto;
-	text-align: center;
-	padding-left: 15%;
-	padding-right: 15%;
-	font-size: 25px;
-	font-family: Times;
-	color: white;
+@media (pointer: fine) {
+	h2 {
+		margin: auto;
+		text-align: center;
+		padding-left: 15%;
+		padding-right: 15%;
+		font-size: 25px;
+		font-family: Times;
+		color: white;
+	}
 }
+@media (pointer: coarse) {
+	h2 {
+		margin: auto;
+		text-align: center;
+		padding-left: 5%;
+		padding-right: 5%;
+		font-size: 20px;
+		font-family: Times;
+		color: white;
+	}
+	.ol-index {
+		padding-left: 20px;
+	}
+}
+
 li {
 	font-family: Verdana;
 	color: white;

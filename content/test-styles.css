@@ -1,0 +1,36 @@
+@media (pointer: fine) {
+	.navlink {
+		font-size: 26px;
+	}
+	.buttons-div {
+		padding-left: 1em;
+	}
+}
+@media (pointer: coarse) {
+	.navlink {
+		font-size: 20px;
+	}
+	.buttons-div {
+		width: 250px;
+		margin: auto;
+	}
+}
+.a {
+	background-color: green;
+}
+.nav {
+	height: 70px;
+}
+h3 {
+	font-family: Verdana;
+	font-size: 17px;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+label {
+	font-family: Verdana;
+	padding-left: 1em;
+}
+button {
+	font-family: Verdana;
+}
