@@ -220,6 +220,9 @@ b {
 .attr-value {
 	color: #e7c855;
 }
+.style {
+	color: #67d8ef;
+}
 .comment {
 	color: #a4a4a4;
 }

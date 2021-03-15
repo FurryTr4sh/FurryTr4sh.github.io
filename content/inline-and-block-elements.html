@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="styles.css">
-		<title>Элементы inline и block</title>
+		<title>Строковые и блочные элементы</title>
 	</head>
 	<body>
 		<div class="nav">
@@ -14,6 +14,149 @@
 
 			<a href="#" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
 		</div>
-		<h1>Work in progress</h1>
+
+		<h1>Типы элементов</h1>
+
+		<div class="div-p">
+			<p class="p-div-top" style="padding-bottom: 0em;">
+				В HTML большинство элементов – это так называемые <b>блочные</b> или <b>строчные</b> элементы.
+			</p>
+			<p class="p-div-middle">
+				Блочные элементы начинаются с новой строки.
+			</p>
+			<p class="p-div-middle">
+				<b class="classicB">Например</b>: <b>&lt<font class="help-tag" title="Самый большой заголовок первого уровня">h1</font>&gt</b>, <b>&lt<font class="help-tag" title="Параграф">p</font>&gt</b>,<b>&lt<font class="help-tag" title='От англ. "division" – "секция"'>div</font>&gt</b>, <b>&lt<font class="help-tag" title="List Item / Элемент списка">li</font>&gt</b> и т. д.
+			</p>
+
+			<p class="p-div-middle" style="padding-top: 1em;">
+				Строчные элементы обычно пишутся без переноса строки.
+			</p>
+			<p class="p-div-middle">
+				<b class="classicB">Например</b>: <b>&lt<font class="help-tag" title='От англ. "bold" – жирный текст'>b</font>&gt</b>, <b>&lt<font class="help-tag" title='От англ. "anchor" – "якорь" а-ля "гиперссылка"'>a</font>&gt</b>, <b>&lt<font class="help-tag" title="Image / Изображение">img</font>&gt</b>, <b>&lt<font class="help-tag" title="Строковый контейнер для фразового контента">span</font>&gt</b> и т. д.
+			</p>
+
+			<p class="p-div-middle" style="padding-top: 1em;">
+				Элемент <b>&lt<font class="help-tag" title='От англ. "division" – "секция"'>div</font>&gt</b> – блочный элемент, часто используемый как <b>контейнер</b> для других элементов HTML.
+			</p>
+			<p class="p-div-bottom" style="padding-top: 0em;">
+				При использовании с <b class="help"><font color="#2965f1" title="Cascading Style Sheets">CSS</font></b>, элемент <b>&lt<font class="help-tag" title='От англ. "division" – "секция"'>div</font>&gt</b> может задавать стиль блокам контента:
+			</p>
+		</div>
+
+		<br>
+
+		<div class="code">
+			&lt<font class="tags">html</font>&gt
+			<br>
+				<font class="space">
+					&lt<font class="tags">body</font>&gt
+				</font>
+				<br>
+					<font class="dblspace">
+						&lt<font class="tags">h1</font>&gtЗаголовок&lt/<font class="tags">h1</font>&gt
+					</font>
+					<br>
+					<font class="dblspace">
+						&lt<font class="tags">div</font> <font class="attr">style</font>=<font class="attr-value">"</font><font class="style">background-color<font color="white">:</font> green<font color="white">;</font> color<font color="white">:</font> white<font color="white">;</font> padding<font color="white">:</font> 20px</font>;<font class="attr-value">"</font>&gt
+					</font>
+					<br>
+						<font class="trplspace">
+							&lt<font class="tags">p</font>&gtЭто параграф вашего контента.&lt<font class="tags">p</font>&gt
+							<br>
+						</font>
+						<font class="trplspace">
+							&lt<font class="tags">p</font>&gtЭто ещё один элемент контента.&lt<font class="tags">p</font>&gt
+						</font>
+						<br>
+					<font class="dblspace">
+						&lt/<font class="tags">div</font>&gt
+					</font>
+					<br>
+				<font class="space">&lt/<font class="tags">body</font>&gt</font>
+				<br>
+			&lt/<font class="tags">html</font>&gt
+		</div>
+
+		<p>
+			Результат:
+		</p>
+
+		<div class="img-container">
+			<img src="../img/15_div.png" class="content-img">
+		</div>
+
+		<br>
+
+		<div class="div-p">
+			<p class="p-div-top" style="padding-bottom: 0em;">
+				Элемент <b>&lt<font class="help-tag" title="Строковый контейнер для фразового контента">span</font>&gt</b> – строчный элемент, часто используемый как контейнер для текста.
+			</p>
+			<p class="p-div-bottom">
+				При использовании с <b class="help"><font color="#2965f1" title="Cascading Style Sheets">CSS</font></b>, элемент <b>&lt<font class="help-tag" title="Строковый контейнер для фразового контента">span</font>&gt</b> может задавать стиль отдельных частей текста:
+			</p>
+		</div>
+
+		<br>
+
+		<div class="code">
+			&lt<font class="tags">html</font>&gt
+			<br>
+				<font class="space">
+					&lt<font class="tags">body</font>&gt
+				</font>
+				<br>
+					<font class="dblspace">
+						&lt<font class="tags">h2</font>&gtНекоторое
+						<br>
+							<font class="trplspace">
+								&lt<font class="tags">span</font> <font class="attr">style</font>=<font class="attr-value">"</font><font class="style">color</font><font color="white">: </font><font class="style">red</font><font color="white">;</font><font class="attr-value">"</font>&gtважное&lt/<font class="tags">span</font>&gt
+								<br>
+								<font class="trplspace">сообщение</font>
+							</font>
+						<br>
+					<font class="dblspace">
+						&lt/<font class="tags">h2</font>&gt
+					</font>
+					<br>
+				<font class="space">
+					&lt/<font class="tags">body</font>&gt
+				</font>
+					<br>
+			&lt/<font class="tags">html</font>&gt
+		</div>
+
+		<p>
+			Результат:
+		</p>
+
+		<div class="img-container">
+			<img src="../img/16_span.png" class="content-img">
+		</div>
+
+		<br>
+
+		<div class="hint">
+			<div class="div-img">
+				<img src="../img/exclamation_mark.png" class="ex-mark">
+			</div>
+			<div class="hint-text-center">
+				<b class="classicB">Итак</b>:
+				<br>
+				Элемент <b>&lt<font class="help-tag" title='От англ. "division" – "секция"'>div</font>&gt</b> позволяет определить <b>блочную</b> секцию документа.
+				<br>
+				Элемент <b>&lt<font class="help-tag" title="Строковый контейнер для фразового контента">span</font>&gt</b> позволяет определить <b>строчную</b> секцию документа.
+			</div>
+		</div>
+
+		<br><br>
+
+		<div class="nav">
+			<a href="tables.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="#" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+		</div>
+
 	</body>
 </html>
