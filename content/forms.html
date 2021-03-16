@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<title>Формы</title>
+	</head>
+	<body>
+		<div class="nav">
+			<a href="inline-and-block-elements.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="#" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+		</div>
+
+		<h1>Элемент &ltform&gt</h1>
+
+		<div class="div-p">
+			<p class="p-div-top" style="padding-bottom: 0em;">
+				Формы в HTML используются для сбора информации от пользователя.
+			</p>
+			<p class="p-div-bottom" style="padding-top: 0em;">
+				Формы  создаются с помощью элемента <b>&lt<font class="help-tag" title="Раздел документа, содержащий интерактивные элементы управления, позволяющие пользователю отправлять информацию на веб-сервер">form</font>&gt</b>.
+			</p>
+		</div>
+
+		<br>
+
+		<div class="code">
+			&lt<font class="tags">body</font>&gt
+			<br>
+				<font class="space">&lt<font class="tags">form</font>&gt...&lt/<font class="tags">form</font>&gt
+					
+				</font>
+				<br>
+			&lt/<font class="tags">body</font>&gt
+		</div>
+
+		<br>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				Атрибут <b class="help-attr" title="действие">action</b> указывает на веб-страницу, которая должна загрузиться после отправки формы пользователем.
+			</p>
+		</div>
+
+		<br>
+
+		<div class="code">
+			&lt<font class="tags">form</font> <font class="attr">action</font>=<font class="attr-value">"https://irkpo.ru"</font>&gt
+			<br>
+			&lt/<font class="tags">form</font>&gt
+		</div>
+
+		<br>
+
+		<div class="hint">
+			<div class="div-img">
+				<img src="../img/exclamation_mark.png" class="ex-mark">
+			</div>
+			<div class="hint-text-center">
+				Обычно форма отправляется на веб-страницу, расположенную на веб-сервере.
+			</div>
+		</div>
+
+		<br><br>
+
+		<h1>Атрибуты method и name</h1>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				Атрибут <b class="help-attr" title="метод">method</b> указывает на метод HTTP-запроса (<b>GET</b> или <b>POST</b>), который будет использоваться при отправке формы.
+			</p>
+		</div>
+
+		<br>
+
+		<div class="code">
+			&lt<font class="tags">form</font> <font class="attr">action</font>=<font class="attr-value">"url"</font> <font class="attr">method</font>=<font class="attr-value">"GET"</font>&gt
+		</div>
+
+		<br>
+
+		<div class="code">
+			&lt<font class="tags">form</font> <font class="attr">action</font>=<font class="attr-value">"url"</font> <font class="attr">method</font>=<font class="attr-value">"POST"</font>&gt
+		</div>
+
+		<br>
+
+		<div class="hint">
+			<div class="div-img">
+				<img src="../img/exclamation_mark.png" class="ex-mark">
+			</div>
+			<div class="hint-text-center">
+				Когда используется метод <b>GET</b>, в URL-адресе веб-страницы будут отображаться данные формы.
+				<br><br>
+				Метод <b>POST</b> используется, когда требуется обновить данные в форме, или когда в форме содержится конфиденциальная информация (пароли).
+				<br>
+				Метод <b>POST</b> безопасней, т. к. передаваемые данные не будут видны в URL-адресе страницы.
+			</div>
+		</div>
+
+		<br>
+
+		<h1>Элементы форм</h1>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				Если мы изменим тип ввода данных на <b class="help-value" title="Круглая кнопка-переключатель">radio</b>, пользователь сможет выбрать только один вариант из представленного списка:
+			</p>
+		</div>
+
+		<br>
+
+		<div class="code">
+			<!-- &lt<font class="tags">form</font>&gt
+			<br>
+				<form class="space">
+					&lt<font class="tags">input</font> <font class="attr">type</font>=<font class="attr-value">"radio"</font>&gtПервый вариант
+				</form>
+				<br>
+				&lt<form class="tags">br</form>&gt
+				<br>
+				<form class="space">
+					&lt<font class="tags">input</font> <font class="attr">type</font>=<font class="attr-value">"radio"</font> <font class="attr">value</font>=<font class="attr-value">"Второй вариант"</font>&gt
+				</form>
+			&lt/<font class="tags">form</font>&gt -->
+		</div>
+
+		<br>
+
+		<div class="img-container">
+			<img src="../img/17_radio.png" class="content-img">
+		</div>
+
+		<br>
+
+		<div class="hint">
+			<div class="div-img">
+				<img src="../img/exclamation_mark.png" class="ex-mark">
+			</div>
+			<div class="hint-text-center">
+				Важно, чтобы оба элемента находились внутри тега формы.
+			</div>
+		</div>
+
+		<br>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				Если же Вам нужно сделать множественный выбор, то вместо <b class="help-value" title="Круглая кнопка-переключатель">radio</b> следует использовать тип <b class="help-value" title="Квадратное поле для проставления галочек (флажков)">checkbox</b>:
+			</p>
+		</div>
+
+		<br><br>
+
+		<div class="nav">
+			<a href="inline-and-block-elements.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="#" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+		</div>
+	</body>
+</html>
