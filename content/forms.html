@@ -106,33 +106,16 @@
 
 		<h1>Элементы форм</h1>
 
+		<h2>Тег &ltinput&gt</h2>
+
 		<div class="div-p">
-			<p class="p-div-top">
-				Если мы изменим тип ввода данных на <b class="help-value" title="Круглая кнопка-переключатель">radio</b>, пользователь сможет выбрать только один вариант из представленного списка:
+			<p class="p-div-top" style="padding-bottom: 0em;">
+				Тег <b>&lt</b><b class="help-tag" title='От англ. "ввод"'>input</b><b>&gt</b> используется для создания интерактивных элементов управления в веб-формах для получения данных от пользователя.
 			</p>
-		</div>
 
-		<br>
-
-		<div class="code">
-			<!-- &lt<font class="tags">form</font>&gt
-			<br>
-				<form class="space">
-					&lt<font class="tags">input</font> <font class="attr">type</font>=<font class="attr-value">"radio"</font>&gtПервый вариант
-				</form>
-				<br>
-				&lt<form class="tags">br</form>&gt
-				<br>
-				<form class="space">
-					&lt<font class="tags">input</font> <font class="attr">type</font>=<font class="attr-value">"radio"</font> <font class="attr">value</font>=<font class="attr-value">"Второй вариант"</font>&gt
-				</form>
-			&lt/<font class="tags">form</font>&gt -->
-		</div>
-
-		<br>
-
-		<div class="img-container">
-			<img src="../img/17_radio.png" class="content-img">
+			<p class="p-div-bottom">
+				Вся информация, необходимая браузеру для обработки, содержится непосредственно в теге <b>&lt</b><b class="help-tag" title='От англ. "ввод"'>input</b><b>&gt</b> и задаётся с помощью различных атрибутов.
+			</p>
 		</div>
 
 		<br>
@@ -142,16 +125,82 @@
 				<img src="../img/exclamation_mark.png" class="ex-mark">
 			</div>
 			<div class="hint-text-center">
-				Важно, чтобы оба элемента находились внутри тега формы.
+				У тега <b>&lt</b><b class="help-tag" title='От англ. "ввод"'>input</b><b>&gt</b> нет закрывающего тега.
 			</div>
 		</div>
 
 		<br>
 
-		<div class="div-p">
-			<p class="p-div-top">
-				Если же Вам нужно сделать множественный выбор, то вместо <b class="help-value" title="Круглая кнопка-переключатель">radio</b> следует использовать тип <b class="help-value" title="Квадратное поле для проставления галочек (флажков)">checkbox</b>:
-			</p>
+		<p>
+			Для примера создадим форму с двумя кнопками типа <b class="help-value" title="Круглая кнопка-переключатель">radio</b> и зададим обоим имя <font class="attr-value">variants</font>:
+		</p>
+
+		<div class="code">
+			&lt<font class="tags">form</font>&gt
+			<br>
+				<form class="space">
+					&lt<font class="tags">input</font> <font class="attr">type</font>=<font class="attr-value">"radio"</font> <font class="attr">name</font>=<font class="attr-value">"variants"</font>&gtПервый вариант
+					<br>
+					&lt<font class="tags">br</font>&gt
+				</form>
+				<form class="space">
+					&lt<font class="tags">input</font> <font class="attr">type</font>=<font class="attr-value">"radio"</font> <font class="attr">name</font>=<font class="attr-value">"variants"</font>&gtВторой вариант
+				</form>
+			&lt/<font class="tags">form</font>&gt
+		</div>
+
+		<br>
+
+		<p>
+			Результат:
+		</p>
+
+		<div class="img-container">
+			<img src="../img/17_radio.gif" class="content-img">
+		</div>
+
+		<br>
+
+		<div class="hint">
+			<div class="div-img">
+				<img src="../img/exclamation_mark.png" class="ex-mark">
+			</div>
+			<div class="hint-text-center">
+				<b class="classicB">Важно</b>: если Вы хотите сделать так, чтобы одновременно могла быть выбранной только <b class="classicB">одна</b> радиокнопка, нужно присвоить всем тегам <b>&lt</b><b class="help-tag" title='Исп. для создания интерактивных элементов управления в веб-формах'>input</b><b>&gt</b> одинаковое имя, указав его в атрибуте <b class="attr">name</b>.
+			</div>
+		</div>
+
+		<br>
+
+		<p>
+			Если же Вам нужно сделать множественный выбор, то вместо <b class="help-value" title="Круглая кнопка-переключатель">radio</b> следует использовать тип <b class="help-value" title="Квадратное поле для проставления галочек (флажков)">checkbox</b>:
+		</p>
+
+		<div class="code">
+			&lt<font class="tags">form</font>&gt
+			<br>
+				<form class="space">
+					&lt<font class="tags">input</font> <font class="attr">type</font>=<font class="attr-value">"checkbox"</font> <font class="attr">name</font>=<font class="attr-value">"variants"</font>&gtПервый вариант
+					<br>
+					&lt<font class="tags">br</font>&gt
+				</form>
+				<form class="space">
+					&lt<font class="tags">input</font> <font class="attr">type</font>=<font class="attr-value">"checkbox"</font> <font class="attr">name</font>=<font class="attr-value">"variants"</font>&gtВторой вариант
+					<br>
+					&lt<font class="tags">br</font>&gt
+				</form>
+				<form class="space">
+					&lt<font class="tags">input</font> <font class="attr">type</font>=<font class="attr-value">"checkbox"</font> <font class="attr">name</font>=<font class="attr-value">"variants"</font>&gtТретий вариант
+				</form>
+			&lt/<font class="tags">form</font>&gt
+		</div>
+
+		<p>
+			Результат:
+		</p>
+
+		<div class="img-container">
+			<img src="../img/18_checkbox.gif" class="content-img">
 		</div>
 
 		<br><br>
