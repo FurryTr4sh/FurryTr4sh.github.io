@@ -120,7 +120,11 @@ label {
 		background-color: #282923;
 		padding: 1em;
 		font-size: 15px;
-		font-family: Courier New;
+		@font-face {
+			font-family: "Courier New";
+			src: url("fonts/CourierNew.woff") format("woff"),
+			url("fonts/CourierNew.woff2") format("woff2");
+		}
 		color: white;
 	}
 	.content-img {
