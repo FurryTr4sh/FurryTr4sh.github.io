@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Промежуточный тест. Основы HTML 2</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" type="text/css" href="test-styles.css">
+
+		<style type="text/css">
+			.nav {
+				height: 50px;
+			}
+			.navlink {
+				font-size: 21px;
+			}
+		</style>
+
+		<script type="text/javascript" src="../jquery-3.5.1.js"></script>
+		<script type="text/javascript" src="scripts/script-html-basics-2.js"></script>
+	</head>
+	<body>
+
+		<script type="text/javascript">
+
+			$(function() {	// До тех пор, пока все radio не будут отмечены, кнопка проверки результатов будет неактивной
+    			var button = $('#CheckResult').prop('disabled', true);
+    			var radios = $('input[type="radio"]');
+    			var arr = $.map(radios, function(el) { 
+                	return el.name; 
+              	});
+
+				   var groups = $.grep(arr, function(v, k) {
+            		return $.inArray(v ,arr) === k;
+    			}).length;
+
+    			radios.on('change', function () {
+        			button.prop('disabled', radios.filter(':checked').length < groups);
+    			});
+
+    			var checked_radios = $('input[type="radio"]');
+    			var amount_of_checked = checked_radios.length;
+			});
+
+			$(function() { // Кнопка сброса выбранных radio будет активна только до того момента, пока не будут отмечены все radio
+    			var button = $('#ClearInput').prop('disabled', false);
+    			var radios = $('input[type="radio"]');
+    			var arr = $.map(radios, function(el) { 
+                	return el.name; 
+              	});
+
+				   var groups = $.grep(arr, function(v, k) {
+            		return $.inArray(v ,arr) === k;
+    			}).length;
+
+    			radios.on('change', function () {
+        			button.prop('disabled', radios.filter(':checked').length === groups);
+    			});
+
+    			var checked_radios = $('input[type="radio"]');
+    			var amount_of_checked = checked_radios.length;
+			});
+		</script>
+
+		<div class="nav">
+			<a href="tables.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="inline-and-block-elements.html" class="navlink"><div class="navBlock" style="font-size: 20px;">Продолжить ⇒</div></a>
+		</div>
+
+		<form>
+			<h3>1. Какова роль атрибута в HTML?</h3>
+			<label id="l1">
+				<input type="radio" name="radio1" id="r1">Атрибут задаёт значение
+			</label>
+			<br>
+			<label id="l2">
+				<input type="radio" name="radio1" id="r2">Атрибут выравнивает текст
+			</label>
+			<br>
+			<label id="l3">
+				<input type="radio" name="radio1" id="r3">Атрибут изменяет тег
+			</label>
+			<br>
+			<label id="l4">
+				<input type="radio" name="radio1" id="r4">Атрибут комментирует код
+			</label>
+			<br>
+
+			<br>
+
+			<h3>2. В чём указывается ширина/высота элементов?</h3>
+			<label id="l5">
+				<input type="checkbox" name="radio2" id="r5">px
+			</label>
+			<br>
+			<label id="l6">
+				<input type="checkbox" name="radio2" id="r6">%
+			</label>
+			<br>
+			<label id="l7">
+				<input type="checkbox" name="radio2" id="r7">em
+			</label>
+			<br>
+			<label id="l8">
+				<input type="checkbox" name="radio2" id="r8">p
+			</label>
+			<br>
+
+			<br>
+
+			<h3>3. Какой <b>атрибут</b> используется для выравнивания содержимого элемента по правому/левому краю или по центру веб-страницы?</h3>
+			<label id="l9">
+				<input type="radio" name="radio3" id="r9">right/left/center
+			</label>
+			<br>
+			<label id="l10">
+				<input type="radio" name="radio3" id="r10">alignment
+			</label>
+			<br>
+			<label id="l11">
+				<input type="radio" name="radio3" id="r11">location
+			</label>
+			<br>
+			<label id="l12">
+				<input type="radio" name="radio3" id="r12">align
+			</label>
+			<br>
+
+			<br>
+
+			<h3>4. Какой атрибут используется для добавления ссылки на изображение?</h3>
+			<label id="l13">
+				<input type="radio" name="radio4" id="r13">url
+			</label>
+			<br>
+			<label id="l14">
+				<input type="radio" name="radio4" id="r14">href
+			</label>
+			<br>
+			<label id="l15">
+				<input type="radio" name="radio4" id="r15">src
+			</label>
+			<br>
+			<label id="l16">
+				<input type="radio" name="radio4" id="r16">link
+			</label>
+
+			<br>
+
+			<h3>5. Какие <b>атрибуты</b> используются для изменения размеров изображения?</h3>
+			<label id="l17">
+				<input type="checkbox" name="radio5" id="r17">size
+			</label>
+			<br>
+			<label id="l18">
+				<input type="checkbox" name="radio5" id="r18">width
+			</label>
+			<br>
+			<label id="l19">
+				<input type="checkbox" name="radio5" id="r19">height
+			</label>
+			<br>
+			<label id="l20">
+				<input type="checkbox" name="radio5" id="r20">px/em/%
+			</label>
+
+			<br>
+
+			<h3>6. В каком атрибуте тега <b>ссылки</b> должен находиться URL-адрес, который Вам необходимо привязать?</h3>
+			<label id="l21">
+				<input type="radio" name="radio6" id="r21">href
+			</label>
+			<br>
+			<label id="l22">
+				<input type="radio" name="radio6" id="r22">url
+			</label>
+			<br>
+			<label id="l23">
+				<input type="radio" name="radio6" id="r23">link
+			</label>
+			<br>
+			<label id="l24">
+				<input type="radio" name="radio6" id="r24">src
+			</label>
+
+			<br>
+
+			<h3>7. Какой тег используется для разделения строк таблицы на столбцы?</h3>
+			<label id="l25">
+				<input type="radio" name="radio7" id="r25">td
+			</label>
+			<br>
+			<label id="l26">
+				<input type="radio" name="radio7" id="r26">tr
+			</label>
+			<br>
+			<label id="l27">
+				<input type="radio" name="radio7" id="r27">border
+			</label>
+			<br>
+			<label id="l28">
+				<input type="radio" name="radio7" id="r28">colspan
+			</label>
+			<br><br>
+
+			<div class="buttons-div">
+				<button id="CheckResult" type="button" disabled onclick="answer()">Проверить результат</button>
+				<button id="ClearInput" type="reset">Очистить</button>
+			</div>
+		</form>
+
+		<br>
+
+		<div class="nav">
+			<a href="tables.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="inline-and-block-elements.html" class="navlink"><div class="navBlock" style="font-size: 20px;">Продолжить ⇒</div></a>
+		</div>
+	</body>
+</html>
