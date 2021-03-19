@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<title>Цвета</title>
+	</head>
+	<body>
+		<div class="nav">
+			<a href="forms.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="#" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+		</div>
+
+		<h1>Цвета в HTML</h1>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				Цвет в HTML задаётся с помощью <a href="https://ru.wikipedia.org/wiki/Шестнадцатеричная_система_счисления" class="hint-link" title="Шестнадцатеричная система счисления" target="_blank">шестнадцатеричного кода</a>.
+			</p>
+
+			<p class="p-div-bottom">
+				Цифры шестнадцатеричной системы счисления: 
+				<b>0</b>, 
+				<b>1</b>, 
+				<b>2</b>, 
+				<b>3</b>, 
+				<b>4</b>, 
+				<b>5</b>, 
+				<b>6</b>, 
+				<b>7</b>, 
+				<b>8</b>, 
+				<b>9</b>, 
+				<b class="help" title="С десятичной сист. сч. – 10">A</b>, 
+				<b class="help" title="С десятичной сист. сч. – 11">B</b>, 
+				<b class="help" title="С десятичной сист. сч. – 12">C</b>, 
+				<b class="help" title="С десятичной сист. сч. – 13">D</b>, 
+				<b class="help" title="С десятичной сист. сч. – 14">E</b>, 
+				<b class="help" title="С десятичной сист. сч. – 15">F</b>.
+			</p>
+		</div>
+
+		<br>
+
+		<h2>Цветовая модель HTML</h2>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				Любой цвет – это комбинация <font color="red">красного</font>, <font color="#0acc0a">зелёного</font> и <font color="#2965f1">синего</font> цветов (отсюда <b>RGB</b>, от англ. <b><font color="red">Red</font></b>, <b><font color="#0acc0a">Green</font></b>, <b><font color="#2965f1">Blue</font></b>).
+			</p>
+
+			<p class="p-div-bottom">
+				Шестнадцатеричный код цвета состоит из символа решётки (#), за которым следуют три или шесть 16-ричных символов.
+			</p>
+		</div>
+
+		<p>
+			На рисунке ниже Вы можете увидеть классическую цветовую модель RGB, на которой можно заметить, что в местах, где круги накладываются друг на друга, образуются новые цвета:
+		</p>
+
+		<div class="div-center">
+			<img src="../img/19_rgb_model.png" width="300px">
+		</div>
+
+		<br>
+
+		<div class="hint">
+			<div class="div-img">
+				<img src="../img/exclamation_mark.png" class="ex-mark">
+			</div>
+			<div class="hint-text-center">
+				Общее количество всех возможных комбинаций <font color="red">красного</font>, <font color="#0acc0a">зелёного</font> и <font color="#2965f1">синего</font> цветов превышает 16 миллионов.
+				<br><br>
+				Путём смешения цветов можно формировать новые цвета.
+				<br>
+				Удобнее всего использовать какой-нибудь HEX-редактор цветов.
+				<br>
+				Такой есть, например, у <a class="hint-link" href="https://www.google.com/search?&q=hex+color" title="HEX-редактор от Google" target="_blank">Google</a>.
+			</div>
+		</div>
+
+		<br>
+
+		<h2>Цвет фона и шрифта</h2>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				Атрибут <b class="help-attr" title='Сокращение от "background color" – "фоновый цвет"'>bgcolor</b> используется для изменения цвета фона веб-страницы.
+			</p>
+		</div>
+
+		<p>
+			В этом примере мы сделаем синий фон с белым заголовком:
+		</p>
+
+		<div class="code">
+			&lt<font class="tags">body</font> <font class="attr">bgcolor</font>=<font class="attr-value">"#0000FF"</font>&gt <font class="comment">&lt!-- если оттенок не так важен, можно указать цвет простым текстом, например "blue" --&gt</font>
+			<br>
+				<font class="space">
+					&lt<font class="tags">h1</font>&gt
+				</font>
+				<br>
+					<font class="dblspace">
+						&lt<font class="tags">font</font> <font class="attr">color</font>=<font class="attr-value">"#FFFFFF"</font>&gt <font class="comment">&lt!-- в данном случае можно указать и как "white" --&gt</font>
+					</font>
+					<br>
+						<font class="trplspace">
+							Заголовок белым цветом
+						</font>
+					<br>
+					<font class="dblspace">
+						&lt/<font class="tags">font</font>&gt
+					</font>
+				<br>
+				<font class="space">
+					&lt/<font class="tags">h1</font>&gt
+				</font>
+				<br>
+			&lt/<font class="tags">body</font>&gt
+		</div>
+
+		<p>
+			Результат:
+		</p>
+
+		<div class="img-container">
+			<img src="../img/20_bgcolor.png" class="content-img">
+		</div>
+
+		<br>
+
+		<div class="hint">
+			<div class="div-img">
+				<img src="../img/exclamation_mark.png" class="ex-mark">
+			</div>
+			<div class="hint-text-center">
+				У большинства элементов цвет задаётся посредством атрибута <b class="help-attr" title='С англ. "цвет"'>color</b>.
+				<br><br>
+				Атрибут <b class="help-attr" title='Сокращение от "background color" – "фоновый цвет"'>bgcolor</b> же применяется в таких тегах как <b>&lt<font class="help-tag" title='Тег "тела" документа'>body</font>&gt</b> и <b>&lt<font class="help-tag" title="Таблица">table</font>&gt</b>.
+			</div>
+		</div>
+
+		<br><br>
+
+		<div class="nav">
+			<a href="forms.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="#" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+		</div>
+	</body>
+</html>

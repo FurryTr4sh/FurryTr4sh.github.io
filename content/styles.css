@@ -81,6 +81,12 @@ label {
 	.nav-mobile {
 		display: none;
 	}
+	.div-center {
+		display: flex;
+		justify-content: center;
+		margin: auto;
+		width: 50%;
+	}
 }
 @media (pointer: coarse) {
 	.nav {
@@ -140,6 +146,12 @@ label {
 		font-size: 16px;
 		font-family: Verdana;
 		border-radius: 8px;
+	}
+	.div-center {
+		display: flex;
+		justify-content: center;
+		margin: auto;
+		width: 85%;
 	}
 }
 .navBlock {
@@ -253,4 +265,14 @@ b {
 .hint-text-center {
 	padding-top: 8px;
 	padding-bottom: 8px;
+}
+.hint-link {
+	text-decoration: none;
+	color: #dca4fc;
+	font-size: 16px;
+}
+.hint-link:hover {
+	text-decoration: underline;
+	color: #e5b8ff;
+	font-size: 17px;
 }
