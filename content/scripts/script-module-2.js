@@ -36,17 +36,17 @@ $(function() { // Кнопка сброса выбранных radio будет 
 	var amount_of_checked = checked_radios.length;
 });
 
-var arr = ['17', '21', '26', '31'];  // Массив правильных вариантов ответа
+var arr = ['1', '5', '9', '10', '15', '17', '18', '21', '23', '26'];  // Массив правильных вариантов ответа
 var correctAnswers
 function answer() {  // Функция подсчёта количества правильных ответов
-	correctAnswers = 0;
-	for (i of arr) {
-		document.getElementById('l' + i).setAttribute('class', 'a');  // Присваивание класса 'a' каждому элементу из массива для подсветки
-		if (document.getElementById('r' + i).checked == false) {		
-		}
-		else {
-			correctAnswers++;
-		}
-	}
-	alert('Правильных ответов: '+correctAnswers+' из 4');
+    correctAnswers = 0;
+    for (i of arr) {
+        document.getElementById('l' + i).setAttribute('class', 'a');  // Присваивание класса 'a' каждому элементу из массива для подсветки
+        if (document.getElementById('r' + i).checked == false) {        
+        }
+        else {
+            correctAnswers++;
+        }
+    }
+    alert('Правильных ответов: '+correctAnswers+' из 10');
 }
