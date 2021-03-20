@@ -34,3 +34,6 @@ label {
 button {
 	font-family: Verdana;
 }
+label {
+	display: flex;
+}
