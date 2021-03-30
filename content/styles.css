@@ -86,6 +86,43 @@ label {
 		justify-content: center;
 		margin: auto;
 		width: 50%;
+	}	
+	.tagB {
+		font-family: Courier New;
+		font-size: 19px;
+	}
+	.help-tag {
+		font-size: 19px;
+		font-family: Courier New;
+		color: #bfbfbf;
+	}
+	.help-tag:hover {
+		font-size: 20px;
+		font-family: Courier New;
+		color: #f92468;
+		cursor: help;
+	}
+	.help-value {
+		font-size: 19px;
+		font-family: Courier New;
+		color: #bfbfbf;
+	}
+	.help-value:hover {
+		font-size: 20px;
+		font-family: Courier New;
+		color: #e7c855;
+		cursor: help;
+	}
+	.help-attr {
+		font-size: 19px;
+		font-family: Courier New;
+		color: #bfbfbf;
+	}
+	.help-attr:hover {
+		font-size: 20px;
+		font-family: Courier New;
+		color: #a6e228;
+		cursor: help;
 	}
 }
 @media (pointer: coarse) {
@@ -152,6 +189,44 @@ label {
 		justify-content: center;
 		margin: auto;
 		width: 85%;
+	}	
+	.tagB {
+		font-family: monospace;
+		font-size: 20px;
+	}
+	.help-tag {
+		font-size: 20px;
+		font-family: monospace;
+		color: #bfbfbf;
+		cursor: help;
+	}
+	.help-tag:hover {
+		font-size: 20.5px;
+		font-family: monospace;
+		color: #f92468;
+		cursor: help;
+	}
+	.help-value {
+		font-size: 20px;
+		font-family: monospace;
+		color: #bfbfbf;
+	}
+	.help-value:hover {
+		font-size: 20.5px;
+		font-family: monospace;
+		color: #e7c855;
+		cursor: help;
+	}
+	.help-attr {
+		font-size: 20px;
+		font-family: monospace;
+		color: #bfbfbf;
+	}
+	.help-attr:hover {
+		font-size: 20.5px;
+		font-family: monospace;
+		color: #a6e228;
+		cursor: help;
 	}
 }
 .navBlock {
@@ -201,21 +276,6 @@ b {
 }
 .help:hover {
 	font-size: 17.5px;
-	cursor: help;
-}
-.help-tag:hover {
-	font-size: 17.5px;
-	color: #f92468;
-	cursor: help;
-}
-.help-attr:hover {
-	font-size: 17.5px;
-	color: #a6e228;
-	cursor: help;
-}
-.help-value:hover {
-	font-size: 18px;
-	color: #e7c855;
 	cursor: help;
 }
 .classicB {
@@ -275,4 +335,42 @@ b {
 	text-decoration: underline;
 	color: #e5b8ff;
 	font-size: 17px;
+}
+.underline {
+	text-decoration: underline;
+}
+
+/* Где exc – exceptions (исключения) для некоторых элементов */
+.help-tag-exc {
+	font-size: 17px;
+	font-family: Verdana;
+	color: #bfbfbf;
+}
+.help-tag-exc:hover {
+	font-size: 17.5px;
+	font-family: Verdana;
+	color: #f92468;
+	cursor: help;
+}
+.help-attr-exc {
+	font-size: 17px;
+	font-family: Verdana;
+	color: #bfbfbf;
+}
+.help-attr-exc:hover {
+	font-size: 17.5px;
+	font-family: Verdana;
+	color: #a6e228;
+	cursor: help;
+}
+.help-value-exc {
+	font-size: 17px;
+	font-family: Verdana;
+	color: #bfbfbf;
+}
+.help-value-exc:hover {
+	font-size: 17.5px;
+	font-family: Verdana;
+	color: #e7c855;
+	cursor: help;
 }

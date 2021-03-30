@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<title>Модели контента</title>
+
+		<style type="text/css">
+			ul {
+				color: white;
+				line-height: 1.35em;
+				font-size: 16px;
+				font-family: Verdana;
+				padding-right: 1em;
+			}
+			@media (pointer: fine) {
+				.flow-png {
+					width: 700px;
+					min-width: 400px;
+				}
+			}
+			@media (pointer: coarse) {
+				.flow-png {
+					width: 330px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="nav">
+			<a href="html-5.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="html-5-structure.html" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+		</div>
+
+		<h1>Категории моделей контента</h1>
+
+		<div class="div-p">
+			<p class="p-div-top" style="padding-bottom: 0em;">
+				В HTML элементы, как правило, были двух моделей: либо блочные, либо строчные. В HTML5 введены <b class="classicB underline">семь</b> основных моделей контента:
+			</p>
+
+			<p class="p-div-middle">
+				<ul style="padding-bottom: 1em;">
+					<li>
+						метаданные;
+					</li>
+					<li>
+						встроенный контент;
+					</li>
+					<li>
+						интерактивный контент;
+					</li>
+					<li>
+						заголовочный контент;
+					</li>
+					<li>
+						фразаобразующий контент;
+					</li>
+					<li>
+						потоковый контент;
+					</li>
+					<li>
+						секционирующий контент.
+					</li>
+				</ul>
+			</p>
+		</div>
+
+		<br>
+
+		<div class="hint">
+			<div class="div-img">
+				<img src="../img/exclamation_mark.png" class="ex-mark">
+			</div>
+			<div class="hint-text-center">
+				Модели контента в HTML5 были разработаны, чтобы сделать структуру разметки понятней как для браузера, так и для веб-разработчика.
+			</div>
+		</div>
+
+		<br>
+
+		<h1>Модели контента</h1>
+
+		<div class="div-p">
+			<p class="p-div-top" style="padding-bottom: 0em;">
+				<b class="classicB underline">Метаданные</b>: контент, который определяет представление или поведение остального контента на веб-странице. Эти элементы находятся в элементе <b class="tagB">&lt<b class="help-tag" title='Тег "головы" документа'>head</b>&gt</b> документа.
+			</p>
+			<p class="p-div-middle">
+				<i>Элементы</i>: 
+					<b class="tagB">&lt<b class="help-tag" title="Определяет основной адрес (URL), исп. для всех относительных адресов в документе">base</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title="Устанавливает связь с внешним документом вроде файла со стилями или со шрифтами">link</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title="Определяет метатеги, использующиеся для хранения информации для браузеров и поисковых систем">meta</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title="Определяет секцию HTML-кода, которая будет вставлена, если в браузере пользователя отключён JavaScript">noscript</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title="Используется для встраивания/подключения исполняемого JavaScript кода">script</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title="Применяется для определения стилей элементов веб-страницы">style</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title="Заголовок/название веб-страницы (имя вкладки в браузере)">title</b>&gt</b>.
+			</p>
+
+			<p class="p-div-top" style="padding-bottom: 0em;">
+				<b class="classicB underline">Встроенный контент</b>: контент, который импортирует другие ресурсы в документ.
+			</p>
+			<p class="p-div-middle">
+				<i>Элементы</i>: 
+					<b class="tagB">&lt<b class="help-tag" title="Исп. для встраивания звукового контента">audio</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title="Исп. для встраивания видеоконтента">video</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title="Исп. для отрисовки графики через JavaScript">canvas</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title="Позволяет встраивать другие веб-страницы">iframe</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title='От англ. "image" – "изображение"'>img</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title="Элемент верхнего уровня в MathML (Mathematical Markup Language), исп. для отображения математических формул">math</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title="Сообщает браузеру, как загружать и отобр. объекты, которые исходно браузер не понимает. Обычно требует подключения плагинов">object</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title="Определяет контейнер для векторной графики SVG">svg</b>&gt</b>.
+			</p>
+
+			<p class="p-div-top" style="padding-bottom: 0em;">
+				<b class="classicB underline">Интерактивный контент</b>: контент, специально предназначенный для взаимодействия с пользователем.
+			</p>
+			<p class="p-div-middle">
+				<i>Элементы</i>:
+					<b class="tagB">&lt<b class="help-tag" title='От англ. "anchor" – "якорь" – гиперссылка.'>a</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title="Исп. для встраивания звукового контента">audio</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title="Исп. для встраивания видеоконтента">video</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title='С англ. "кнопка"'>button</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title="Исп. для раскрытия скрытой (дополнительной) информации">details</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title="Вставляет расширенный контент в выбранное место документа. Может потребоваться подключение плагинов">embed</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title="Позволяет встраивать другие веб-страницы">iframe</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title='От англ. "image" – "изображение"'>img</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title='С англ. "ввод". Исп. для создания интерактивных элем. управления в веб-формах (текст. полей, кнопок, переключателей и флажков)'>input</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title="Подпись к элементу пользовательского интерфейса">label</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title="Сообщает браузеру, как загружать и отобр. объекты, которые исходно браузер не понимает. Обычно требует подключения плагинов">object</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title="Позв. создать элемент интерфейса в виде раскрывающегося списка, а также список со множественным выбором">select</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title="Элемент формы для создания области, в которую можно вводить несколько строк текста">textarea</b>&gt</b>.
+			</p>
+
+			<p class="p-div-top" style="padding-bottom: 0em;">
+				<b class="classicB underline">Заголовочный контент</b>: создаёт заголовки.
+			</p>
+			<p class="p-div-middle">
+				<i>Элементы</i>:
+					<b class="tagB">&lt<b class="help-tag" title="Самый большой заголовок">h1</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title="Крупный заголовок">h2</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title="Средний заголовок">h3</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title="Маленький заголовок">h4</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title="Очень маленький заголовок">h5</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title="Самый маленький заголовок">h6</b>&gt</b>.
+			</p>
+
+			<p class="p-div-top" style="padding-bottom: 0em;">
+				<b class="classicB underline">Фразаобразующий контент</b>: к этой модели относятся несколько строчных элементов, по аналогии с HTML4.
+			</p>
+			<p class="p-div-middle">
+				<i>Элементы:</i>
+					<b class="tagB">&lt<b class="help-tag" title='От англ. "image" – "изображение"'>img</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title="Строковый контейнер для фразового контента">span</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title="Тег форматирования, оформляющий важный текст">strong</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title="Подпись к элементу пользовательского интерфейса">label</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title="Разрыв строки">br</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title="Тег форматирования, оформляющий мелкий текст">small</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title="Тег форматирования, оформляющий подстрочный текст">sub</b>&gt</b> и прочие.
+			</p>
+
+			<p class="p-div-top" style="padding-bottom: 0em;">
+				<b class="classicB underline">Потоковый контент</b>: большинство HTML5-элементов, входящих в эту группу, отвечают за обычное функционирование документа.
+			</p>
+
+			<p class="p-div-top" style="padding-bottom: 0em;">
+				<b class="classicB underline">Секционирующий контент</b>: отвечает за определение границ разделов на веб-странице (например, заголовков, подвала).
+			</p>
+			<p class="p-div-bottom" style="padding-top: 0em;">
+				<i>Элементы</i>:
+					<b class="tagB">&lt<b class="help-tag" title="Независимый фрагмент веб-страницы. Задаёт содержание вроде новости или статьи">article</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title="Раздел страницы, косвенно относящийся к содержимому и обычно располагающийся отдельно от основного содержимого">aside</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title="Элемент секции навигации">nav</b>&gt</b>,
+					<b class="tagB">&lt<b class="help-tag" title="Секция / раздел, служащий для группировки взаимосвязанного содержимого">section</b>&gt</b>.
+			</p>
+		</div>
+
+		<br>
+
+		<div class="div-center">
+			<img src="../img/22_flow.png" class="flow-png">
+		</div>
+
+		<br>
+
+		<div class="hint">
+			<div class="div-img">
+				<img src="../img/exclamation_mark.png" class="ex-mark">
+			</div>
+			<div class="hint-text-center">
+				Модели контента накладываются друг на друга определённым образом, что зависит от способа их использования.
+			</div>
+		</div>
+
+		<br><br>
+
+		<div class="nav">
+			<a href="html-5.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="html-5-structure.html" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+		</div>
+	</body>
+</html>
