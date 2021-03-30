@@ -192,38 +192,38 @@ label {
 	}	
 	.tagB {
 		font-family: monospace;
-		font-size: 20px;
+		font-size: 16px;
 	}
 	.help-tag {
-		font-size: 20px;
+		font-size: 16px;
 		font-family: monospace;
 		color: #bfbfbf;
 		cursor: help;
 	}
 	.help-tag:hover {
-		font-size: 20.5px;
+		font-size: 17px;
 		font-family: monospace;
 		color: #f92468;
 		cursor: help;
 	}
 	.help-value {
-		font-size: 20px;
+		font-size: 16px;
 		font-family: monospace;
 		color: #bfbfbf;
 	}
 	.help-value:hover {
-		font-size: 20.5px;
+		font-size: 17px;
 		font-family: monospace;
 		color: #e7c855;
 		cursor: help;
 	}
 	.help-attr {
-		font-size: 20px;
+		font-size: 16px;
 		font-family: monospace;
 		color: #bfbfbf;
 	}
 	.help-attr:hover {
-		font-size: 20.5px;
+		font-size: 17px;
 		font-family: monospace;
 		color: #a6e228;
 		cursor: help;
