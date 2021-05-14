@@ -28,12 +28,10 @@ h3 {
 	padding-right: 2em;
 }
 label {
+	display: flex;
 	font-family: Verdana;
 	padding-left: 1em;
 }
 button {
 	font-family: Verdana;
-}
-label {
-	display: flex;
 }

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<title>Элементы article, section и aside</title>
+	</head>
+	<body>
+		<div class="nav">
+			<a href="header-nav-footer.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="test-html5-basics.html" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+		</div>
+
+		<div class="progress-bar">
+			<font class="white-text">Прогресс завершения курса:</font>
+			<br>
+			<progress value="60" max="100"></progress>
+		</div>
+
+		<h1>Элемент &ltarticle&gt</h1>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				Элемент <b class="tagB">&lt<b class="help-tag" title="Независимый фрагмент веб-страницы. Задаёт содержание вроде новости или статьи">article</b>&gt</b> представляет автономный, независимый контент, который может использоваться и распространяться отдельно от своей страницы или сайта. Это может быть сообщение на форуме, журнал или статья из газеты или блога, комментарий, интерактивный виджет или любой другой независимый элемент контента.
+			</p>
+
+			<p class="p-div-bottom" style="padding-top: 0em;">
+				Элемент <b class="tagB">&lt<b class="help-tag" title="Независимый фрагмент веб-страницы. Задаёт содержание вроде новости или статьи">article</b>&gt</b> заменил элемент <b class="tagB">&lt<b class="help-tag" title="Блочный элемент, используемый как контейнер для других элементов">div</b>&gt</b>, широко использовавшийся в HTML4 вместе с атрибутами id или class.
+			</p>
+		</div>
+
+		<br>
+
+		<div class="code">
+			&lt<font class="tags">article</font>&gt
+			<br>
+				<font class="space">&lt<font class="tags">h1</font>&gtЗаголовок статьи&lt/<font class="tags">h1</font>&gt</font>
+				<br>
+				<font class="space">&lt<font class="tags">p</font>&gtСодержимое элемента article&lt/<font class="tags">p</font>&gt</font>
+				<br>
+			&lt/<font class="tags">article</font>&gt
+		</div>
+
+		<br>
+
+		<div class="hint">
+			<div class="div-img">
+				<img src="../img/exclamation_mark.png" class="ex-mark">
+			</div>
+			<div class="hint-text-center">
+				Элемент <b class="tagB">&lt<b class="help-tag" title="Независимый фрагмент веб-страницы. Задаёт содержание вроде новости или статьи">article</b>&gt</b> можно помещать внутрь другого элемента <b class="tagB">&lt<b class="help-tag" title="Независимый фрагмент веб-страницы. Задаёт содержание вроде новости или статьи">article</b>&gt</b>. Такой вложенный элемент представляет контент, связанный с элементом снаружи.
+			</div>
+		</div>
+
+		<br>
+
+		<h1>Элемент &ltsection&gt</h1>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				Элемент <b class="tagB">&lt<b class="help-tag" title="Раздел. Служит для группировки взаимосвязанного содержимого">section</b>&gt</b> – это логический контейнер страницы или статьи.
+			</p>
+
+			<p class="p-div-bottom" style="padding-top: 0em;">
+				С его помощью содержимое элемента <b class="tagB">&lt<b class="help-tag" title="Независимый фрагмент веб-страницы. Задаёт содержание вроде новости или статьи">article</b>&gt</b> разбивается на блоки или разделы.
+			</p>
+		</div>
+
+		<br>
+
+		<div class="code">
+			&lt<font class="tags">article</font>&gt
+			<br>
+				<font class="space">&lt<font class="tags">h1</font>&gtДобро пожаловать!&lt/<font class="tags">h1</font>&gt</font>
+				<br>
+				<font class="space">&lt<font class="tags">section</font>&gt</font>
+				<br>
+					<font class="dblspace">&lt<font class="tags">h1</font>&gtЗаголовок&lt/<font class="tags">h1</font>&gt</font>
+					<br>
+					<font class="dblspace">&lt<font class="tags">p</font>&gtНекоторый контент&lt/<font class="tags">p</font>&gt</font>
+					<br>
+				<font class="space">&lt/<font class="tags">section</font>&gt</font>
+				<br>
+			&lt/<font class="tags">article</font>&gt
+		</div>
+
+		<br>
+
+		<div class="hint">
+			<div class="div-img">
+				<img src="../img/exclamation_mark.png" class="ex-mark">
+			</div>
+			<div class="hint-text-center">
+				Если нужно оформить контент элемента <b class="tagB">&lt<b class="help-tag" title="Раздел. Служит для группировки взаимосвязанного содержимого">section</b>&gt</b> в отдельный раздел, рекомендуется использовать элемент <b class="tagB">&lt<b class="help-tag" title="Независимый фрагмент веб-страницы. Задаёт содержание вроде новости или статьи">article</b>&gt</b>.
+			</div>
+		</div>
+
+		<br>
+
+		<h1>Элемент &ltaside&gt</h1>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				Элемент <b class="tagB">&lt<b class="help-tag" title="Раздел, косвенно относящийся к содержимому и обычно располагающийся отдельно от основного содержимого">aside</b>&gt</b> служит для представления второстепенного или сопутствующего контента.
+			</p>
+			<p class="p-div-bottom" style="padding-top: 0em;">
+				Он обычно располагается в боковых панелях страницы.
+			</p>
+		</div>
+
+		<br>
+
+		<div class="code">
+			&lt<font class="tags">article</font>&gt
+			<br>
+				<font class="space">&lt<font class="tags">h1</font>&gtПодарки на любой вкус!&lt/<font class="tags">h1</font>&gt</font>
+				<br>
+				<font class="space">&lt<font class="tags">p</font>&gtНа этом веб-сайте Вы найдёте лучшие в мире подарки!&lt/<font class="tags">p</font>&gt</font>
+				<br>
+				<font class="space">&lt<font class="tags">aside</font>&gt</font>
+				<br>
+					<font class="dblspace">&lt<font class="tags">p</font>&gtДоставка в течение 24 часов.&lt/<font class="tags">p</font>&gt</font>
+					<br>
+				<font class="space">&lt/<font class="tags">aside</font>&gt</font>
+				<br>
+			&lt/<font class="tags">article</font>&gt
+		</div>
+
+		<br>
+		<br>
+
+		<div class="nav">
+			<a href="header-nav-footer.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="test-html5-basics.html" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+		</div>
+	</body>
+</html>

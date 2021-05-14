@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<title>Элемент audio</title>
+	</head>
+	<body>
+		<div class="nav">
+			<a href="test-html5-basics.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="#" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+		</div>
+
+		<div class="progress-bar">
+			<font class="white-text">Прогресс завершения курса:</font>
+			<br>
+			<progress value="66" max="100"></progress>
+		</div>
+
+		<h1>Элемент &ltaudio&gt</h1>
+
+		<div class="div-p">
+			<p class="p-div-top" style="padding-bottom: 0em;">
+				До HTML5 специального стандарта для проигрывания звуковых файлов в браузере не существовало.
+			</p>
+			<p class="p-div-middle">
+				С введением элемента <b class="tagB">&lt<b class="help-tag" title="Исп. для встраивания звукового контента">audio</b>&gt</b> в HTML5 появился единый стандарт для встраивания звуковых файлов в веб-страницы.
+			</p>
+
+			<p class="p-div-bottom">
+				Указать путь к исходному звуковому файлу можно двумя способами:
+			</p>
+		</div>
+
+		<br>
+
+		<p>
+			С помощью атрибута <b class="help-attr" title='Сокр. "source" – "источник"'>src</b>:
+		</p>
+
+		<div class="code">
+			&lt<font class="tags">audio <font class="attr">controls</font></font> <font class="attr">src</font>=<font class="attr-value">"audio.mp3"</font>&gt
+			<br>
+			&lt/<font class="tags">audio</font>&gt
+		</div>
+
+		<br>
+
+		<p>
+			С помощью отдельных вложенных внутрь <b class="tagB">&lt<b class="help-tag" title="Исп. для встраивания звукового контента">audio</b>&gt</b> тегов <b class="tagB">&lt<b class="help-tag" title="Источник">source</b>&gt</b>:
+		</p>
+
+		<div class="code">
+			&lt<font class="tags">audio <font class="attr">controls</font></font>&gt
+			<br>
+				<font class="space">&lt<font class="tags">source</font> <font class="attr">src</font>=<font class="attr-value">"audio.mp3"</font>&gt</font>
+				<br>
+				<font class="space">&lt<font class="tags">source</font> <font class="attr">src</font>=<font class="attr-value">"audio.ogg"</font>&gt</font>
+				<br>
+			&lt/<font class="tags">audio</font>&gt
+		</div>
+
+		<br>
+
+		<div class="hint">
+			<div class="div-img">
+				<img src="../img/exclamation_mark.png" class="ex-mark">
+			</div>
+			<div class="hint-text-center">
+				Элементы <b class="tagB">&lt<b class="help-tag" title="Источник">source</b>&gt</b> могут быть привязаны к различным звуковым файлам. Браузер будет использовать тот формат, который был распознан первым.
+				<br>
+				Также эти элементы не требуют закрывающего тега.
+				<br>
+				<br>
+				Атрибут <b class="help-attr" title="Кнопки управления">controls</b> добавляет панель управления аудиотреком с кнопкой паузы, перемоткой и регулировкой громкости (функционал может отличаться в разных браузерах).
+			</div>
+		</div>
+
+		<br>
+		<br>
+
+		<div class="nav">
+			<a href="test-html5-basics.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="#" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+		</div>
+	</body>
+</html>

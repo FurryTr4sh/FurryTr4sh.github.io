@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" type="text/css" href="test-styles.css">
+		<script type="text/javascript" src="../jquery-3.5.1.js"></script>
+		<script type="text/javascript" src="../jquery-ui-1.12.1/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="scripts/test-script.js"></script>
+		<script type="text/javascript" src="scripts/script-html-basics.js"></script>
+		<script src="../jquery-ui-1.12.1/jquery.ui.touch-punch.js"></script>
+		<title>Промежуточный тест. Основы HTML5</title>
+		<style type="text/css">
+			.nav {
+				height: 50px;
+			}
+			.navlink {
+				font-size: 21px;
+			}
+			.div-center {
+				align-content: space-between;
+				align-items: center;
+				flex-direction: column;
+				height: 300px;
+				background-color: #292929;
+				padding: 5px;
+			}
+			.div-block {
+				height: 19.5%;
+				width: 100%;
+				background-color: #636396;
+				border: solid 1px;
+				cursor: move;
+				text-align: center;
+			}
+			p {
+				font-family: monospace;
+				font-size: 20px;
+			}
+		</style>
+
+		<script>
+			$(function() {
+				$(".div-center").sortable({
+					axis: "y"
+				});
+			});
+
+			$(function() {
+				var parent = $(".div-center");
+				var divs = parent.children();
+				while (divs.length) {
+					parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+				}
+			});
+
+			/*function alClass() {
+				alert(.class);
+			};*/
+
+			/*var arr = jQuery.map(jQuery('.div-block'),function(n,i) {
+                return jQuery(n).attr('id');
+            });
+            console.log(arr);*/
+
+            /*$(function() {
+  				var elements = new Array();
+  				$('.div-block').each(function() {
+    				elements.push($(this).attr("id"))
+  				});
+			});*/
+
+			/*var ids = $('.div-block').map(function(_, x) {
+    			return x.id;
+			}).get();
+			console.log(ids);*/
+
+			/*var ids = $('.div-block').map(function() {
+    			return this.id;
+			}).get();
+			console.log(1, ids);
+
+
+			//For modern browsers with arrow functions
+			ids = $('.div-block').map((i, item)=>item.id).get();
+			console.log(2, ids);*/
+
+
+
+			/*var idArray = [];
+			$('.div-block').each(function() {
+               var id = $(this).attr('id');
+               idArray.push(id);
+            });
+			console.log(idArray);*/
+		</script>
+
+	</head>
+	<body>
+		<div class="nav">
+			<a href="article-section-aside.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="audio.html" class="navlink"><div class="navBlock" style="font-size: 20px;">Продолжить ⇒</div></a>
+		</div>
+
+		<div class="progress-bar">
+			<font class="white-text">Прогресс завершения курса:</font>
+			<br>
+			<progress value="63" max="100"></progress>
+		</div>
+
+		<br>
+
+		<form>
+			<h1>[This page still is under construction!]</h1>
+
+			<h3>1. Переставив блоки внизу, составьте структуру обычной HTML5-страницы:</h3>
+			<div class="div-center">
+				<div class="div-block" id="f1">
+					<p>&ltnav&gt</p>
+				</div>
+				<div class="div-block" id="f">
+					<p>&ltheader&gt</p>
+				</div>
+				<div class="div-block" id="s">
+					<p>&ltarticle&gt</p>
+				</div>
+				<div class="div-block" id="t">
+					<p>&ltsection&gt</p>
+				</div>
+				<div class="div-block" id="l">
+					<p>&ltfooter&gt</p>
+				</div>
+			</div>
+
+			<script>
+				/*var elements = {
+								1: document.getElementById('f1').id,
+								2: document.getElementById('f').id,
+								3: document.getElementById('s').id,
+								4: document.getElementById('t').id,
+								5: document.getElementById('l').id,
+								};
+			
+				console.log(elements);
+
+				if (elements[1].style.top < elements[2].style.top) {
+					console.log('Жопа');
+				}*/
+			$(document).ready(function() {
+				var test = "";
+
+				$(".div-block.ui-sortable-handle").each(function() {
+  					test = test + $(this).attr('id') + ' ';
+				});
+
+				console.log(test);
+			});
+
+			</script>
+
+
+			<!-- <h3>1. Где следует помещать элемент &ltheader&gt?</h3>
+			<label id="l1">
+				<input type="radio" name="radio1" id="r1">
+					<font id="f1">
+						---
+					</font>
+			</label>
+			<label id="l2">
+				<input type="radio" name="radio1" id="r2">
+					<font id="f2">
+						---
+					</font>
+			</label>
+			<label id="l3">
+				<input type="radio" name="radio1" id="r3">
+					<font id="f3">
+						---
+					</font>
+			</label>
+			<label id="l4">
+				<input type="radio" name="radio1" id="r4">
+					<font id="f4">
+						---
+					</font>
+			</label> -->
+		</form>
+
+		<br>
+
+		<div class="nav">
+			<a href="article-section-aside.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="audio.html" class="navlink"><div class="navBlock" style="font-size: 20px;">Продолжить ⇒</div></a>
+		</div>
+	</body>
+</html>

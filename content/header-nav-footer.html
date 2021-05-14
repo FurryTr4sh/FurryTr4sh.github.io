@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<title>Элементы header, nav и footer</title>
+	</head>
+	<body>
+		<div class="nav">
+			<a href="html-5-structure.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="article-section-aside.html" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+		</div>
+
+		<div class="progress-bar">
+			<font class="white-text">Прогресс завершения курса:</font>
+			<br>
+			<progress value="57" max="100"></progress>
+		</div>
+
+		<h1>Элемент &ltheader&gt</h1>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				В HTML4 мы определяли голову документа примерно следующим образом:
+			</p>
+		</div>
+
+		<br>
+
+		<div class="code">
+			&lt<font class="tags">div</font> <font class="attr">id</font>=<font class="attr-value">"header"</font>&gt
+		</div>
+
+		<br>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				Вместо этого в HTML5 используется простой тег <b class="tagB">&lt<b class="help-tag" title="Задаёт «шапку» сайта или раздела, в котор. обычно располагается заголовок">header</b>&gt</b>.
+			</p>
+
+			<p class="p-div-bottom" style="padding-top: 0em;">
+				Элемент <b class="tagB">&lt<b class="help-tag" title="Задаёт «шапку» сайта или раздела, в котор. обычно располагается заголовок">header</b>&gt</b> следует помещать внутрь тега <b class="tagB">&lt<b class="help-tag" title='Тег "тела" документа'>body</b>&gt</b>.
+			</p>
+		</div>
+
+		<br>
+
+		<div class="code">
+			&lt!<font class="tags">DOCTYPE</font> html&gt
+			<br>
+			&lt<font class="tags">html</font>&gt
+			<br>
+				<font class="space">&lt<font class="tags">head</font>&gt&lt/<font class="tags">head</font>&gt</font>
+				<br>
+				<font class="space">&lt<font class="tags">body</font>&gt</font>
+				<br>
+					<font class="dblspace">&lt<font class="tags">header</font>&gt</font>
+					<br>
+						<font class="trplspace">&lt<font class="tags">h1</font>&gtСамый громкий заголовок&lt/<font class="tags">h1</font>&gt</font>
+						<br>
+						<font class="trplspace">&lt<font class="tags">h3</font>&gtНе столь громкий заголовок&lt/<font class="tags">h3</font>&gt</font>
+						<br>
+					<font class="dblspace">&lt/<font class="tags">header</font>&gt</font>
+					<br>
+				<font class="space">&lt/<font class="tags">body</font>&gt</font>
+				<br>
+			&lt<font class="tags">html</font>&gt
+		</div>
+
+		<br>
+
+		<div class="img-container">
+			<img src="../img/24_header.png" class="content-img">
+		</div>
+
+		<br>
+
+		<div class="hint">
+			<div class="div-img">
+				<img src="../img/exclamation_mark.png" class="ex-mark">
+			</div>
+			<div class="hint-text-center">
+				Обратите внимание: <b class="tagB">&lt<b class="help-tag" title="Задаёт «шапку» сайта или раздела, в котор. обычно располагается заголовок">header</b>&gt</b> – абсолютно новый элемент, не имеющий ничего общего с тегом <b class="tagB">&lt<b class="help-tag" title='Тег "головы" документа'>head</b>&gt</b>.
+			</div>
+		</div>
+
+		<br>
+
+		<h1>Элемент &ltnav&gt</h1>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				Этот тег отвечает за раздел страницы, в котором находятся ссылки на другие страницы или разделы в пределах текущей страницы.
+			</p>
+		</div>
+
+		<p>
+			Пример раздела с навигационными ссылками:
+		</p>
+
+		<div class="code">
+			&lt<font class="tags">nav</font>&gt
+			<br>
+				<font class="space">&lt<font class="tags">ul</font>&gt</font>
+				<br>
+					<font class="dblspace">&lt<font class="tags">li</font>&gt&lt<font class="tags">a </font><font class="attr">href</font>=<font class="attr-value">"#"</font>&gtДомашняя страница&lt/<font class="tags">a</font>&gt&lt/<font class="tags">li</font>&gt</font>
+					<br>
+					<font class="dblspace">&lt<font class="tags">li</font>&gt&lt<font class="tags">a </font><font class="attr">href</font>=<font class="attr-value">"#"</font>&gtУслуги&lt/<font class="tags">a</font>&gt&lt/<font class="tags">li</font>&gt</font>
+					<br>
+					<font class="dblspace">&lt<font class="tags">li</font>&gt&lt<font class="tags">a </font><font class="attr">href</font>=<font class="attr-value">"#"</font>&gtО нашей компании&lt/<font class="tags">a</font>&gt&lt/<font class="tags">li</font>&gt</font>
+					<br>
+				<font class="space">&lt/<font class="tags">ul</font>&gt</font>
+				<br>
+			&lt/<font class="tags">nav</font>&gt
+		</div>
+
+		<br>
+
+		<div class="img-container">
+			<img src="../img/25_nav.png" class="content-img">
+		</div>
+
+		<br>
+
+		<div class="hint">
+			<div class="div-img">
+				<img src="../img/exclamation_mark.png" class="ex-mark">
+			</div>
+			<div class="hint-text-center">
+				При этом не обязательно помещать все ссылки в документе внутрь элемента <b class="tagB">&lt<b class="help-tag" title="Элемент секции навигации">nav</b>&gt</b> – он предназначен в основном для больших разделов со ссылками. Обычно ссылки, которые не должны быть в элементе <b class="tagB">&lt<b class="help-tag" title="Элемент секции навигации">nav</b>&gt</b>, добавляются в элемент <b class="tagB">&lt<b class="help-tag" title='Нижний колонтитул или «подвал» сайта'>footer</b>&gt</b>.
+			</div>
+		</div>
+
+		<br>
+
+		<h1>Элемент &ltfooter&gt</h1>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				Обычно самая нижняя секция веб-страницы называется подвалом или футером.
+			</p>
+		</div>
+
+		<br>
+
+		<div class="code">
+			&lt<font class="tags">footer</font>&gt ... &lt/<font class="tags">footer</font>&gt
+		</div>
+
+		<br>
+
+		<div class="hint">
+			<div class="div-img">
+				<img src="../img/exclamation_mark.png" class="ex-mark">
+			</div>
+			<div class="hint-text-center">
+				В этой паре тегов, как правило, заключается:
+				<ul>
+					<li>Контактная информация</li>
+					<li>Политика конфиденциальности</li>
+					<li>Условия предоставления услуг</li>
+					<li>Информация об авторских правах</li>
+					<li>Значки со ссылками на соцсети</li>
+					<li>Карта сайта и сопутствующие документы</li>
+				</ul>
+			</div>
+		</div>
+
+		<br>
+		<br>
+
+		<div class="nav">
+			<a href="html-5-structure.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="article-section-aside.html" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+		</div>
+	</body>
+</html>

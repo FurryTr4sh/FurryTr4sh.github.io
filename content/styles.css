@@ -22,6 +22,15 @@ h3 {
 label {
 	color: white;
 }
+.progress-bar {
+	position: relative;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.white-text {
+	color: white;
+	font-family: Consolas;
+}
 @media (pointer: fine) {
 	.nav {
 		display: flex;
