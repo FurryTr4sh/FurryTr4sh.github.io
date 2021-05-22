@@ -11,6 +11,12 @@
 		<script type="text/javascript">
 		</script>
 		<h2>Практикум по информатике «Разработка веб-сайтов»</h2>
+
+		<div id="theme-toggler">
+			<input type="checkbox" id="switcher">
+			<label for="switcher" id="switcher-label"></label>
+		</div>
+
 		<ol>
 			<li><a href="content/what-is-html.html"><b>Знакомство с HTML:</b></a>
 				<ol class="ol-index">
@@ -56,7 +62,59 @@
 					<li><a href="content/header-nav-footer.html">Элементы header, nav и footer</a></li>
 					<li><a href="content/article-section-aside.html">Элементы article, section и aside</a></li>
 					<li><a href="content/test-html5-basics.html">Промежуточный тест. Основы HTML5</a></li>
+					<li><a href="content/audio.html">Элемент аудио</a></li>
 				</ol>
 		</ol>
+
+		<script>
+			if (localStorage.getItem("ui") !== null) {
+				// Если в localStorage есть элемент, то включена светлая тема
+				$("#switcher-label").attr("id", "switcher-label-light");
+				$("#switcher").attr("id", "switcher-light");
+				$("label").attr("for", "switcher-light");
+				$("#theme-toggler").attr("id", "theme-toggler-light");
+				$("#switcher-label-light").css("right", "3%");
+
+				$("body").addClass("body-light");
+				$("h2").addClass("h2-light");
+				$("ol").addClass("ol-light");
+				$("a").addClass("a-light");
+			}
+			else {
+				// Иначе же будет включено тёмное оформление
+				$("#switcher-label-light").animate({ right: "62%" }, 200);
+				$("#switcher-label-light").attr("id", "switcher-label");
+				$("label").attr("for", "switcher");
+				$("#theme-toggler-light").attr("id", "theme-toggler");
+				$("#switcher-light").attr("id", "switcher");
+
+				$("body").removeClass("body-light");
+				$("h2").removeClass("h2-light");
+				$("ol").removeClass("ol-light");
+				$("a").removeClass("a-light");
+			}
+
+			// Включение светлой темы
+			$("#switcher").click(function() {
+				localStorage.setItem("ui", "light-ui");
+				$("#switcher-label").animate({ right: "3%" }, 200);
+				$("#switcher-label").attr("id", "switcher-label-light");
+				$("label").attr("for", "switcher-light");
+				$("#theme-toggler").attr("id", "theme-toggler-light");
+				$("#switcher").attr("id", "switcher-light");
+				setTimeout(location.reload.bind(location), 200);
+			});
+
+			// Включение тёмной темы
+			$("#switcher-light").click(function() {
+				localStorage.removeItem("ui", "light-ui");
+				$("#switcher-label-light").animate({ right: "62%" }, 200);
+				$("#switcher-label-light").attr("id", "switcher-label");
+				$("label").attr("for", "switcher");
+				$("#theme-toggler-light").attr("id", "theme-toggler");
+				$("#switcher-light").attr("id", "switcher");
+				setTimeout(location.reload.bind(location), 200);
+			});
+		</script>
 	</body>
 </html>

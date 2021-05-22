@@ -3,8 +3,10 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" src="../jquery-3.5.1.js"></script>
 		<title>Что такое HTML?</title>
 		<link rel="stylesheet" type="text/css" href="styles.css">
+
 		<style type="text/css">
 			.ST3 {
 				color: orange;
@@ -14,8 +16,8 @@
 				text-decoration: underline;
 				font-size: 17px;
 			}
-			@media (pointer: fine) {
-
+			.ST3-light {
+				color: orange;
 			}
 		</style>
 	</head>
@@ -30,6 +32,11 @@
 			<font class="white-text">Прогресс завершения курса:</font>
 			<br>
 			<progress value="1" max="100"></progress>
+		</div>
+
+		<div id="theme-toggler">
+			<input type="checkbox" id="switcher">
+			<label for="switcher" id="switcher-label"></label>
 		</div>
 
 		<h1>Знакомство с HTML</h1>
@@ -75,5 +82,8 @@
 
 			<a href="html-structure.html" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
 		</div>
+
+		<script src="scripts/themes-switch.js"></script>
+		
 	</body>
 </html>

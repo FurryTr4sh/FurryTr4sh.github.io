@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="../jquery-3.5.1.js"></script>
 		<title>Изображения</title>
 		<link rel="stylesheet" type="text/css" href="styles.css">
 	</head>
@@ -20,6 +21,11 @@
 			<font class="white-text">Прогресс завершения курса:</font>
 			<br>
 			<progress value="23" max="100"></progress>
+		</div>
+
+		<div id="theme-toggler">
+			<input type="checkbox" id="switcher">
+			<label for="switcher" id="switcher-label"></label>
 		</div>
 
 		<h1>
@@ -177,5 +183,6 @@
 			<a href="links.html" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
 		</div>
 
+		<script src="scripts/themes-switch.js"></script>
 	</body>
 </html>

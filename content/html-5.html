@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="../jquery-3.5.1.js"></script>
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		<title>Знакомство с HTML5</title>
 
@@ -29,6 +30,11 @@
 			<font class="white-text">Прогресс завершения курса:</font>
 			<br>
 			<progress value="48" max="100"></progress>
+		</div>
+
+		<div id="theme-toggler">
+			<input type="checkbox" id="switcher">
+			<label for="switcher" id="switcher-label"></label>
 		</div>
 
 		<h1>HTML5</h1>
@@ -122,5 +128,7 @@
 
 			<a href="content-models.html" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
 		</div>
+
+		<script src="scripts/themes-switch.js"></script>
 	</body>
 </html>

@@ -3,9 +3,20 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="../jquery-3.5.1.js"></script>
 		<link rel="stylesheet" type="text/css" href="styles.css">
-		<link rel="stylesheet" type="text/css" href="test-styles.css">
 		<title>Таблицы</title>
+		<style type="text/css">
+			.nav {
+				height: 70px;
+			}
+			#theme-toggler {
+				top: 80px;
+			}
+			#theme-toggler-light {
+				top: 80px;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="nav">
@@ -20,6 +31,11 @@
 			<font class="white-text">Прогресс завершения курса:</font>
 			<br>
 			<progress value="31" max="100"></progress>
+		</div>
+
+		<div id="theme-toggler">
+			<input type="checkbox" id="switcher">
+			<label for="switcher" id="switcher-label"></label>
 		</div>
 
 		<h1>Таблицы</h1>
@@ -201,5 +217,7 @@
 
 			<a href="test-html-basics-2.html" class="navlink"><div class="navBlock" style="font-size: 20px;">Тест.<br>Основы HTML 2 ⇒</div></a>
 		</div>
+
+		<script src="scripts/themes-switch.js"></script>
 	</body>
 </html>

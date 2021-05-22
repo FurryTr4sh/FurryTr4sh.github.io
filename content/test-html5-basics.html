@@ -119,7 +119,7 @@
 
 			<h3>1. Переставив блоки внизу, составьте структуру обычной HTML5-страницы:</h3>
 			<div class="div-center">
-				<div class="div-block" id="f1">
+				<div class="div-block" id="f">
 					<p>&ltnav&gt</p>
 				</div>
 				<div class="div-block" id="f">
@@ -137,29 +137,15 @@
 			</div>
 
 			<script>
-				/*var elements = {
-								1: document.getElementById('f1').id,
-								2: document.getElementById('f').id,
-								3: document.getElementById('s').id,
-								4: document.getElementById('t').id,
-								5: document.getElementById('l').id,
-								};
-			
-				console.log(elements);
+				$(document).ready(function() {
+					var test = "";
 
-				if (elements[1].style.top < elements[2].style.top) {
-					console.log('Жопа');
-				}*/
-			$(document).ready(function() {
-				var test = "";
+					$(".div-block.ui-sortable-handle").each(function() {
+	  					test = test + $(this).attr('id');
+					});
 
-				$(".div-block.ui-sortable-handle").each(function() {
-  					test = test + $(this).attr('id') + ' ';
+					console.log(test);
 				});
-
-				console.log(test);
-			});
-
 			</script>
 
 
@@ -199,5 +185,7 @@
 
 			<a href="audio.html" class="navlink"><div class="navBlock" style="font-size: 20px;">Продолжить ⇒</div></a>
 		</div>
+
+		<script src="scripts/test-script.js"></script>
 	</body>
 </html>

@@ -22,14 +22,94 @@ h3 {
 label {
 	color: white;
 }
+.body-light {
+	background-color: #C9C9DA;
+}
+.h1-light {
+	background: linear-gradient(45deg, black, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.h2-light {
+	background: linear-gradient(45deg, black, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.h3-light {
+	background: linear-gradient(45deg, black, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.p-light {
+	background: linear-gradient(45deg, black, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .progress-bar {
 	position: relative;
 	margin-top: 10px;
 	margin-left: 10px;
 }
+#theme-toggler {
+	width: 60px;
+	height: 25px;
+	border-radius: 15px;
+	background: grey;
+	position: absolute;
+	top: 60px;
+	right: 2%;
+	background-image: url(../img/toggler-dark.png);
+	background-size: 65px;
+}
+#theme-toggler-light {
+	width: 60px;
+	height: 25px;
+	border-radius: 15px;
+	background: grey;
+	position: absolute;
+	top: 60px;
+	right: 2%;
+	background-image: url(../img/toggler-light.png);
+	background-size: 65px;
+}
+#switcher-label {
+	width: 21px;
+	height: 21px;
+	background: #cccccc;
+	border-radius: 15px;
+	cursor: pointer;
+	position: absolute;
+	top: 2px;
+	right: 62%;
+	z-index: 1;
+}
+#switcher-label-light {
+	width: 21px;
+	height: 21px;
+	background: #cccccc;
+	border-radius: 15px;
+	cursor: pointer;
+	position: absolute;
+	top: 2px;
+	z-index: 1;
+}
+#switcher {
+	visibility: hidden;
+}
+#switcher-light {
+	visibility: hidden;
+}
 .white-text {
 	color: white;
 	font-family: Consolas;
+}
+.white-text-light {
+	background: linear-gradient(45deg, black, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.code-light {
+	background-color: #3a3a3a;
 }
 @media (pointer: fine) {
 	.nav {
@@ -41,6 +121,9 @@ label {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
+	.nav-light {
+		background-color: #7d7d7d;
+	}
 	.navlink {
 		text-decoration: none;
 		font-size: 21px;
@@ -51,6 +134,9 @@ label {
 		width: 52%;
 		margin: auto;
 		border-radius: 6px;
+	}
+	.div-p-light {
+		background-color: #9c9c9c;
 	}
 	p {
 		color: white;
@@ -71,6 +157,9 @@ label {
 		font-family: Courier New;
 		color: white;
 	}
+	.code-light {
+		background-color: #3a3a3a;
+	}
 	.content-img {
 		padding-left: 24%;
 		max-width: 70%;
@@ -87,6 +176,9 @@ label {
 		font-family: Verdana;
 		border-radius: 8px;
 	}
+	.hint-light {
+		background-color: #bda86d;
+	}
 	.nav-mobile {
 		display: none;
 	}
@@ -100,10 +192,16 @@ label {
 		font-family: Courier New;
 		font-size: 19px;
 	}
+	.tagB-light {
+		color: #808080;
+	}
 	.help-tag {
 		font-size: 19px;
 		font-family: Courier New;
 		color: #bfbfbf;
+	}
+	.help-tag-light {
+		color: #808080;
 	}
 	.help-tag:hover {
 		font-size: 20px;
@@ -127,6 +225,9 @@ label {
 		font-family: Courier New;
 		color: #bfbfbf;
 	}
+	.help-attr-light {
+		color: #4c4c4c;
+	}
 	.help-attr:hover {
 		font-size: 20px;
 		font-family: Courier New;
@@ -144,6 +245,9 @@ label {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
+	.nav-light {
+		background-color: #7d7d7d;
+	}
 	.navlink {
 		text-decoration: none;
 		font-size: 18px;
@@ -154,6 +258,9 @@ label {
 		width: 90%;
 		margin: auto;
 		border-radius: 6px;
+	}
+	.div-p-light {
+		background-color: #9c9c9c;
 	}
 	p {
 		color: white;
@@ -174,6 +281,9 @@ label {
 		font-family: Monospace;
 		color: white;
 	}
+	.code-light {
+		background-color: #3a3a3a;
+	}
 	.content-img {
 		padding: 0px;
 		max-width: 100%;
@@ -193,6 +303,9 @@ label {
 		font-family: Verdana;
 		border-radius: 8px;
 	}
+	.hint-light {
+		background-color: #bda86d;
+	}
 	.div-center {
 		display: flex;
 		justify-content: center;
@@ -203,11 +316,17 @@ label {
 		font-family: monospace;
 		font-size: 16px;
 	}
+	.tagB-light {
+		color: #808080;
+	}
 	.help-tag {
 		font-size: 16px;
 		font-family: monospace;
 		color: #bfbfbf;
 		cursor: help;
+	}
+	.help-tag-light {
+		color: #808080;
 	}
 	.help-tag:hover {
 		font-size: 17px;
@@ -230,6 +349,9 @@ label {
 		font-size: 16px;
 		font-family: monospace;
 		color: #bfbfbf;
+	}
+	.help-attr-light {
+		color: #4c4c4c;
 	}
 	.help-attr:hover {
 		font-size: 17px;
@@ -282,6 +404,9 @@ label {
 b {
 	font-size: 17px;
 	color: #bfbfbf;
+}
+.b-light {
+	color: #cccccc;
 }
 .help:hover {
 	font-size: 17.5px;
@@ -340,6 +465,9 @@ b {
 	color: #dca4fc;
 	font-size: 16px;
 }
+.hint-link-light {
+	color: #a646dc;
+}
 .hint-link:hover {
 	text-decoration: underline;
 	color: #e5b8ff;
@@ -355,6 +483,9 @@ b {
 	font-family: Verdana;
 	color: #bfbfbf;
 }
+.help-tag-exc-light {
+	color: #888888;
+}
 .help-tag-exc:hover {
 	font-size: 17.5px;
 	font-family: Verdana;
@@ -366,6 +497,9 @@ b {
 	font-family: Verdana;
 	color: #bfbfbf;
 }
+.help-attr-exc-light {
+	color: #888888;
+}
 .help-attr-exc:hover {
 	font-size: 17.5px;
 	font-family: Verdana;
@@ -376,6 +510,9 @@ b {
 	font-size: 17px;
 	font-family: Verdana;
 	color: #bfbfbf;
+}
+.help-value-exc-light {
+	color: #888888;
 }
 .help-value-exc:hover {
 	font-size: 17.5px;

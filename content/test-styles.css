@@ -27,10 +27,20 @@ h3 {
 	padding-left: 2em;
 	padding-right: 2em;
 }
+.h3-light {
+	background: linear-gradient(45deg, black, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 label {
 	display: flex;
 	font-family: Verdana;
 	padding-left: 1em;
+}
+.label-light {
+	background: linear-gradient(45deg, black, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: black;
 }
 button {
 	font-family: Verdana;

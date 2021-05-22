@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="../jquery-3.5.1.js"></script>
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		<title>Элемент audio</title>
 	</head>
@@ -19,6 +20,11 @@
 			<font class="white-text">Прогресс завершения курса:</font>
 			<br>
 			<progress value="66" max="100"></progress>
+		</div>
+
+		<div id="theme-toggler">
+			<input type="checkbox" id="switcher">
+			<label for="switcher" id="switcher-label"></label>
 		</div>
 
 		<h1>Элемент &ltaudio&gt</h1>
@@ -66,6 +72,16 @@
 
 		<br>
 
+		<p>
+			Результат в обоих случаях:
+		</p>
+
+		<div class="img-container">
+			<img src="../img/26_audio.png" class="content-img">
+		</div>
+
+		<br>
+
 		<div class="hint">
 			<div class="div-img">
 				<img src="../img/exclamation_mark.png" class="ex-mark">
@@ -74,9 +90,33 @@
 				Элементы <b class="tagB">&lt<b class="help-tag" title="Источник">source</b>&gt</b> могут быть привязаны к различным звуковым файлам. Браузер будет использовать тот формат, который был распознан первым.
 				<br>
 				Также эти элементы не требуют закрывающего тега.
-				<br>
-				<br>
+			</div>
+		</div>
+
+		<br>
+
+		<h1>Атрибуты элемента &ltaudio&gt</h1>
+
+		<div class="div-p">
+			<p class="p-div-top" style="padding-bottom: 0em;">
 				Атрибут <b class="help-attr" title="Кнопки управления">controls</b> добавляет панель управления аудиотреком с кнопкой паузы, перемоткой и регулировкой громкости (функционал может отличаться в разных браузерах).
+			</p>
+
+			<p class="p-div-bottom">
+				При указанном атрибуте <b class="help-attr" title="Автовоспроизведение">autoplay</b> воспроизведение звукового файла начинается сразу же после загрузки страницы без нажатия пользователем каких-либо кнопок.
+			</p>
+		</div>
+
+		<br>
+
+		<div class="hint">
+			<div class="div-img">
+				<img src="../img/exclamation_mark.png" class="ex-mark">
+			</div>
+			<div class="hint-text-center">
+				Использование атрибута <b class="help-attr" title="Автовоспроизведение">autoplay</b> не рекомендуется, ибо оно сильно раздражает пользователей, заставляя их судорожно искать кнопку остановки аудио.
+				<br>
+				Нередко это приводит к яростному закрытию страницы.
 			</div>
 		</div>
 
@@ -90,5 +130,7 @@
 
 			<a href="#" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
 		</div>
+
+		<script src="scripts/themes-switch.js"></script>
 	</body>
 </html>
