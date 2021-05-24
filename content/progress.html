@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="../jquery-3.5.1.js"></script>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<title>Элемент progress</title>
+	</head>
+	<body>
+		<div class="nav">
+			<a href="video.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="test-html5-mediacontent.html" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+		</div>
+
+		<div class="progress-bar">
+			<font class="white-text">Прогресс завершения курса:</font>
+			<br>
+			<progress value="70" max="100"></progress>
+		</div>
+
+		<div id="theme-toggler">
+			<input type="checkbox" id="switcher">
+			<label for="switcher" id="switcher-label"></label>
+		</div>
+
+		<h1>Полоса выполнения</h1>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				Элемент <b class="tagB">&lt<b class="help-tag" title="Полоса прогресса">progress</b>&gt</b> используется для создания полосы выполнения на веб-странице.
+			</p>
+
+			<p class="p-div-middle">
+				Атрибуты элемента <b class="tagB">&lt<b class="help-tag" title="Полоса прогресса">progress</b>&gt</b>:
+			</p>
+			<p class="p-div-middle" style="padding-top: 0em;">
+				<b class="help-attr" title="Текущее значение">Value</b> – указывает степень заполненности полосы прогресса.
+			</p>
+			<p class="p-div-bottom" style="padding-top: 0em;">
+				<b class="help-attr" title="Максимальное значение, при котором полоса заполнится">Max</b> – задаёт максимальное значение, при достижении которого полоса прогресса будет заполнена.
+			</p>
+		</div>
+
+		<br>
+
+		<p>
+			Пример:
+		</p>
+
+		<div class="code">
+			Статус: &lt<font class="tags">progress</font> <font class="attr">value</font>=<font class="attr-value">"35"</font> <font class="attr">max</font>=<font class="attr-value">"100"</font>&gt&lt/<font class="tags">progress</font>&gt
+		</div>
+
+		<br>
+
+		<p>
+			Результат:
+		</p>
+
+		<div class="img-container">
+			<img src="../img/28_progress.png" class="content-img">
+		</div>
+
+		<br>
+
+		<div class="hint">
+			<div class="div-img">
+				<img src="../img/exclamation_mark.png" class="ex-mark">
+			</div>
+			<div class="hint-text-center">
+				Динамическое заполнение полоски прогресса можно реализовать при помощи языка JavaScript.
+			</div>
+		</div>
+
+		<br>
+		<br>
+
+		<div class="nav">
+			<a href="video.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="test-html5-mediacontent.html" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+		</div>
+
+		<script src="scripts/themes-switch.js"></script>
+	</body>
+</html>
