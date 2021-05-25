@@ -6,6 +6,31 @@
 		<script src="../jquery-3.5.1.js"></script>
 		<title>Атрибуты</title>
 		<link rel="stylesheet" type="text/css" href="styles.css">
+		<style>
+			.attr {
+				-webkit-text-fill-color: #a6e228;
+			}
+			.attr-value {
+				-webkit-text-fill-color: #e7c855;
+			}
+			.b-light {
+				-webkit-text-fill-color: white;
+			}
+			@media (pointer: coarse) {
+				.b-light:hover {
+				-webkit-text-fill-color: #e7c855;
+			}
+			}
+			.help-attr-exc {
+				color: #d6d6d6;
+			}
+			.help-tag-exc {
+				color: #d6d6d6;
+			}
+			.help-value-exc {
+				color: #d6d6d6;
+			}
+		</style>
 	</head>
 	<body>
 		
@@ -32,7 +57,7 @@
 
 		<div class="div-p">
 			<p class="p-div-top">
-				Атрибуты содержат <b>дополнительную информацию</b> об элементе или теге, а также изменяют их. Большинство <font class="attr">атрибутов</font> имеют <b class="help attr-value" title="value">значения</b>; значение <b>изменяет</b> атрибут.
+				Атрибуты содержат <b>дополнительную информацию</b> об элементе или теге, а также изменяют их. Большинство <font class="attr">атрибутов</font> имеют <font class="help attr-value" title="value">значения</font>; значение <b>изменяет</b> атрибут.
 			</p>
 		</div>
 
@@ -47,7 +72,7 @@
 		</div>
 
 		<p>
-			В этом примере значение атрибута <b class="tagB help-value" title="Ну ты же знаешь, что такое центр?">"center"</b> указывает на то, что содержание элемента <b class="tagB">&lt<b class="help-tag" title="Параграф">p</b>&gt</b> должно быть выровнено по центру:
+			В этом примере значение атрибута <b class="help-value tagB" title="Ну ты же знаешь, что такое центр?">"center"</b> указывает на то, что содержание элемента <b class="tagB">&lt<b class="help-tag" title="Параграф">p</b>&gt</b> должно быть выровнено по центру:
 		</p>
 
 		<div class="img-container">
@@ -74,7 +99,7 @@
 		</p>
 
 		<p>
-			Для этого нам понадобится атрибут <b class="help-attr-exc" title="width">ширины</b>:
+			Для этого нам понадобится атрибут <font class="help-attr-exc" title="width">ширины</font>:
 		</p>
 
 		<div class="code">

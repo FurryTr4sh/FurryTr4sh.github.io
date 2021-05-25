@@ -177,7 +177,7 @@ label {
 		border-radius: 8px;
 	}
 	.hint-light {
-		background-color: #bda86d;
+		background-color: #af9c68;
 	}
 	.nav-mobile {
 		display: none;
@@ -203,6 +203,9 @@ label {
 	.help-tag-light {
 		color: #808080;
 	}
+	.help-tag-light:hover {
+		-webkit-text-fill-color: #f92468;
+	}
 	.help-tag:hover {
 		font-size: 20px;
 		font-family: Courier New;
@@ -220,6 +223,12 @@ label {
 		color: #e7c855;
 		cursor: help;
 	}
+	.help-value-light {
+		color: #929292;
+	}
+	.help-value-light:hover {
+		-webkit-text-fill-color: #e7c855;
+	}
 	.help-attr {
 		font-size: 19px;
 		font-family: Courier New;
@@ -227,6 +236,11 @@ label {
 	}
 	.help-attr-light {
 		color: #4c4c4c;
+		background: #9c9c9c;
+	}
+	.help-attr-light:hover {
+		background: #9c9c9c;
+		-webkit-text-fill-color: #a6e228;
 	}
 	.help-attr:hover {
 		font-size: 20px;
@@ -304,7 +318,7 @@ label {
 		border-radius: 8px;
 	}
 	.hint-light {
-		background-color: #bda86d;
+		background-color: #af9c68;
 	}
 	.div-center {
 		display: flex;
@@ -327,6 +341,9 @@ label {
 	}
 	.help-tag-light {
 		color: #808080;
+	}
+	.help-tag-light:hover {
+		-webkit-text-fill-color: #f92468;
 	}
 	.help-tag:hover {
 		font-size: 17px;
@@ -352,6 +369,11 @@ label {
 	}
 	.help-attr-light {
 		color: #4c4c4c;
+	}
+	.help-attr-light:hover {
+		color: green;
+		background: #9c9c9c;
+		-webkit-text-fill-color: #a6e228;
 	}
 	.help-attr:hover {
 		font-size: 17px;
@@ -500,6 +522,9 @@ b {
 .help-attr-exc-light {
 	color: #888888;
 }
+.help-attr-exc-light:hover {
+	color: #a6e228;
+}
 .help-attr-exc:hover {
 	font-size: 17.5px;
 	font-family: Verdana;
@@ -519,4 +544,51 @@ b {
 	font-family: Verdana;
 	color: #e7c855;
 	cursor: help;
+}
+.linktext {
+	-webkit-text-fill-color: #eccbff;
+}
+.linktext-light {
+	-webkit-text-fill-color: #eccbff;
+	background: #9c9c9c;
+}
+.b-light {
+	-webkit-text-fill-color: #d8d8d8;
+}
+.b-bold {
+	color: #bfbfbf;
+}
+.b-bold-light {
+	-webkit-text-fill-color: #d8d8d8;
+	background: #C9C9DA;
+}
+.redtext {
+	-webkit-text-fill-color: red;
+}
+.redtext-light {
+	-webkit-text-fill-color: red;
+	background: #9c9c9c;
+}
+.greentext {
+	-webkit-text-fill-color: #2a752a;
+}
+.greentext-light {
+	-webkit-text-fill-color: #0a8c0a;
+	background: #9c9c9c;
+}
+.bluetext {
+	-webkit-text-fill-color: #2965f1;
+}
+.bluetext-light {
+	-webkit-text-fill-color: #4f75ff;
+	background: #9c9c9c;
+}
+.hint-help {
+	background: #726645;
+}
+.hint-help-light {
+	background: #af9c68;
+}
+.hint-help-light:hover {
+	background: #af9c68;
 }

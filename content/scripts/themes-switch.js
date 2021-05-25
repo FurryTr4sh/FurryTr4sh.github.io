@@ -20,10 +20,18 @@ if (localStorage.getItem("ui") !== null) {
 	$(".div-p").addClass("div-p-light");
 	$("b").addClass("b-light");
 	$(".help-attr").addClass("help-attr-light");
+	$(".help-value").addClass("help-value-light");
 	$(".help-attr-exc").addClass("help-attr-exc-light");
 	$(".help-tag-exc").addClass("help-tag-exc-light");
 	$(".help-value-exc").addClass("help-value-exc-light");
 	$(".hint-link").addClass("hint-link-light");
+	$(".linktext").addClass("linktext-light");
+	$(".redtext").addClass("redtext-light");
+	$(".greentext").addClass("greentext-light");
+	$(".bluetext").addClass("bluetext-light");
+	$(".hint-help").addClass("hint-help-light");
+	$(".b-bold").addClass("b-bold-light");
+	$(".ST3").addClass("ST3-light");
 }
 else {
 	// Иначе же будет включено тёмное оформление
@@ -47,10 +55,18 @@ else {
 	$(".div-p").removeClass("div-p-light");
 	$("b").removeClass("b-light");
 	$(".help-attr").removeClass("help-attr-light");
+	$(".help-value").removeClass("help-value-light");
 	$(".help-attr-exc").removeClass("help-attr-exc-light");
 	$(".help-tag-exc").removeClass("help-tag-exc-light");
 	$(".help-value-exc").removeClass("help-value-exc-light");
 	$(".hint-link").removeClass("hint-link-light");
+	$(".linktext").removeClass("linktext-light");
+	$(".redtext").removeClass("redtext-light");
+	$(".greentext").removeClass("greentext-light");
+	$(".bluetext").removeClass("bluetext-light");
+	$(".hint-help").removeClass("hint-help-light");
+	$(".b-bold").removeClass("b-bold-light");
+	$(".ST3").removeClass("ST3-light");
 }
 
 // Включение светлой темы
