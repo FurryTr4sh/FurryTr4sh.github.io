@@ -5,7 +5,6 @@
 		<title>Промежуточный тест. Медиаконтент в HTML5</title>
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		<link rel="stylesheet" type="text/css" href="test-styles.css">
-
 		<style type="text/css">
 			.nav {
 				height: 50px;
@@ -13,11 +12,25 @@
 			.navlink {
 				font-size: 21px;
 			}
+			.inputtextarea {
+				width: 53px;
+				color: #f92468;
+				background-color: black;
+			}
+			.inputtextarea2 {
+				width: 33px;
+				color: #a6e228;
+				background-color: black;
+			}
+			.inputtextarea3 {
+				width: 15px;
+				color: #e7c855;
+				background-color: black;
+			}
 		</style>
-
 		<script type="text/javascript" src="../jquery-3.5.1.js"></script>
 		<script type="text/javascript" src="scripts/test-script.js"></script>
-		<script type="text/javascript" src="script-html5-mediacontent.js"></script>
+		<script type="text/javascript" src="scripts/script-html5-mediacontent.js"></script>
 	</head>
 	<body>
 		<div class="nav">
@@ -110,7 +123,25 @@
 
 			<br>
 
-			<h3>3. Третий вопрос</h3>
+			<h3>3. Заполните пробелы в коде полосы прогресса, чтобы шкала показывала 25% заполненности:</h3>
+			<span style="padding-left: 16px;">
+				<font style="font-size: 13px;">&lt</font>
+				<input type="text" id="firstinput" class="inputtextarea">
+					<span>
+						<input type="text" id="secondinput" class="inputtextarea2">
+							=<font color="#e7c855">"</font>
+						<input type="text" id="thirdinput" class="inputtextarea3">
+							<font color="#e7c855">"</font>
+					</span>
+					<span>
+						&nbsp <font color="#a6e228">max</font>=<font color="#e7c855">"100"</font><font style="font-size: 13px;">&gt</font>
+					</span>
+			</span>
+
+
+			<br>
+
+			<!-- <h3>ЫЫЫЫ. ВащеНеТретий вопрос</h3>
 			<label id="l9">
 				<input type="radio" name="radio3" id="r9">
 					<font id="f9">
@@ -246,7 +277,7 @@
 					<font id="f28">
 						444
 					</font>
-			</label>
+			</label> -->
 			<br><br>
 
 			<div class="buttons-div">
@@ -257,7 +288,7 @@
 
 		<br>
 
-		<div class="nav">
+		<div class="nav nav-mobile">
 			<a href="progress.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
 
 			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
@@ -266,5 +297,6 @@
 		</div>
 
 		<script src="scripts/test-script.js"></script>
+		<script src="scripts/script-html5-mediacontent.js"></script>
 	</body>
 </html>
