@@ -111,6 +111,22 @@ label {
 .code-light {
 	background-color: #3a3a3a;
 }
+.ul-list {
+	color: white;
+	line-height: 1.35em;
+	font-size: 16px;
+	font-family: Verdana;
+	padding-right: 1em;
+}
+.ul-list-light {
+	background: linear-gradient(45deg, black, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	line-height: 1.35em;
+	font-size: 16px;
+	font-family: Verdana;
+	padding-right: 1em;
+}
 @media (pointer: fine) {
 	.nav {
 		display: flex;

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="../jquery-3.5.1.js"></script>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<title>Web Storage API</title>
+		<style>
+			ul {
+				padding-bottom: 1em;
+			}
+			@media (pointer: fine) {
+				.image-1 {
+					max-width: 165%;
+				}
+			}
+			@media (pointer: coarse) {
+				.image-1 {
+					max-width: 100%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="nav">
+			<a href="test-html5-mediacontent.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="#" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+		</div>
+
+		<div class="progress-bar">
+			<font class="white-text">Прогресс завершения курса:</font>
+			<br>
+			<progress value="75" max="100"></progress>
+		</div>
+
+		<div id="theme-toggler">
+			<input type="checkbox" id="switcher">
+			<label for="switcher" id="switcher-label"></label>
+		</div>
+
+		<h1>HTML5 и веб-хранение данных</h1>
+
+		<div class="div-p">
+			<p class="p-div-top" style="padding-bottom: 0em;">
+				Благодаря тому, что в HTML5 есть поддержка веб-хранения, данные веб-сайтов можно хранить на локальном компьютере пользователя.
+			</p>
+
+			<p class="p-div-middle">
+				До появления HTML5 в этих целях использовались <b class="help" title="Фрагменты данных, сохраняемых в браузере пользователя для его идентификации">куки-файлы</b>.
+			</p>
+
+			<p class="p-div-bottom">
+				Преимущества веб-хранения данных:
+				<ul class="ul-list" style="margin-top: 0px;">
+					<li>
+						Безопасней
+					</li>
+					<li>
+						Быстрее
+					</li>
+					<li>
+						Возможность сохранять больший объём данных
+					</li>
+					<li>
+						Хранимые данные не передаются при каждом серверном запросе
+					</li>
+				</ul>
+			</p>
+		</div>
+
+		<br>
+
+		<div class="hint">
+			<div class="div-img">
+				<img src="../img/exclamation_mark.png" class="ex-mark">
+			</div>
+			<div class="hint-text-center">
+				Локальное хранение данных привязано к домену. Все веб-страницы, зарегистрированные на одном домене, могут хранить и получать одни и те же данные.
+			</div>
+		</div>
+
+		<br>
+
+		<h1>Виды объектов веб-хранения</h1>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				Есть два типа объектов веб-хранения:
+				<ul class="ul-list" style="margin-top: 0px; padding-bottom: 0px;">
+					<li>
+						<b class="help" title="Позволяет получить доступ к объекту Storage текущей сессии">sessionStorage()</b>
+					</li>
+					<li>
+						<b class="help" title="Позволяет получить доступ к Storage объекту">localStorage()</b>
+					</li>
+				</ul>
+			</p>
+
+			<p class="p-div-bottom" style="padding-top: 0em;">
+				В чём отличия?
+				<ul class="ul-list" style="margin-top: 0px;">
+					<li>
+						В <b>сессионном</b> хранилище данные каждый раз удаляются после закрытия браузера пользователем
+					</li>
+					<li>
+						В <b>локальном</b> хранилище данные хранятся без ограничения по времени и могут быть удалены либо <font color="#ffdd00">JS</font>-скриптом, либо вручную через инструменты отладки
+					</li>
+				</ul>
+			</p>
+		</div>
+
+		<br>
+
+		<div class="hint">
+			<div class="div-img">
+				<img src="../img/exclamation_mark.png" class="ex-mark">
+			</div>
+			<div class="hint-text-center">
+				Чтобы в полной мере понимать принцип работы с API, Вам нужно познакомиться с азами <font color="#ffdd00">JavaScript</font>.
+			</div>
+		</div>
+
+		<br>
+
+		<h1>Значения для работы с локальным хранилищем</h1>
+
+		<div class="div-p">
+			<p class="p-div-top" style="padding-bottom: 0em;">
+				Для локального и сессионного веб-хранения используются очень простые и похожие правила синтаксиса.
+			</p>
+			<p class="p-div-bottom" style="padding-top: 0em;">
+				Данные сохраняются в виде пары <b>ключ/значение</b>.
+			</p>
+		</div>
+
+		<p>
+			Сохранение значения:
+		</p>
+
+		<div class="code">
+			localStorage.<font class="style">setItem</font>(<font class="attr-value">"key1"</font>, <font class="attr-value">"value1"</font>);
+		</div>
+
+		<br>
+		<div class="div-p">
+			<p class="p-div-top">
+				Найти и взаимодействовать (изменять, удалять и т. д.) ключ и значение можно как методами <font color="#ffdd00">JavaScript</font>, так и вручную через инструменты разработчика (клавиша вызова по умолчанию – <b class="help" title="Аналогичное сочетание клавиш – Ctrl + Shift + I">F12</b>).
+			</p>
+		</div>
+
+		<br>
+
+		<div class="div-center">
+			<img src="../img/29_localStorage.png" class="image-1">
+		</div>
+
+		<br>
+
+		<!--
+
+		<p>
+			Пример:
+		</p>
+
+		<div class="code">
+			Статус: &lt<font class="tags">progress</font> <font class="attr">value</font>=<font class="attr-value">"35"</font> <font class="attr">max</font>=<font class="attr-value">"100"</font>&gt&lt/<font class="tags">progress</font>&gt
+		</div>
+
+		<br>
+
+		<p>
+			Результат:
+		</p>
+
+		<div class="img-container">
+			<img src="../img/28_progress.png" class="content-img">
+		</div>
+
+		<br>
+
+		<div class="hint">
+			<div class="div-img">
+				<img src="../img/exclamation_mark.png" class="ex-mark">
+			</div>
+			<div class="hint-text-center">
+				Динамическое заполнение полоски прогресса можно реализовать при помощи языка <font color="#ffdd00">JavaScript</font>.
+			</div>
+		</div>
+
+		<br>
+
+		-->
+
+		<br>
+
+		<div class="nav">
+			<a href="test-html5-mediacontent.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="#" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+		</div>
+
+		<script src="scripts/themes-switch.js"></script>
+	</body>
+</html>

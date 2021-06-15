@@ -32,6 +32,7 @@ if (localStorage.getItem("ui") !== null) {
 	$(".hint-help").addClass("hint-help-light");
 	$(".b-bold").addClass("b-bold-light");
 	$(".ST3").addClass("ST3-light");
+	$(".ul-list").addClass("ul-list-light");
 }
 else {
 	// Иначе же будет включено тёмное оформление
@@ -67,6 +68,7 @@ else {
 	$(".hint-help").removeClass("hint-help-light");
 	$(".b-bold").removeClass("b-bold-light");
 	$(".ST3").removeClass("ST3-light");
+	$(".ul-list").removeClass("ul-list-light");
 }
 
 // Включение светлой темы
