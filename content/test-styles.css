@@ -45,3 +45,31 @@ label {
 button {
 	font-family: Verdana;
 }
+.inputtextarea {
+	color: #ffffff;
+	background-color: black;
+	border-color: #9f00ff;
+	font-size: 20px;
+}
+.font20 {
+	font-size: 20px;
+}
+.YetAnotherWhiteText {
+	color: white;
+	font-size: 20px;
+	font-family: Arial;
+}
+.YellowTestFont {
+	color: #e7c855;
+	font-family: Arial;
+}
+.GreenTestFont {
+	color: #a6e228;
+	font-family: Arial;
+}
+.span-hint {
+	display: none; 
+	padding-left: 16px; 
+	font-size: 20px; 
+	font-family: Arial;
+}

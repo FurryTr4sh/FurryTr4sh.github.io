@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Промежуточный тест. Веб-хранение данных в HTML5</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" type="text/css" href="test-styles.css">
+		<style type="text/css">
+			.nav {
+				height: 50px;
+			}
+			.navlink {
+				font-size: 21px;
+			}
+			.inputtextarea {
+				width: 40px;
+				color: #ffffff;
+				background-color: black;
+				font-size: 20px;
+			}
+			.InputsTaskDiv {
+				background-color: #181818;
+				display: inline-block;
+				padding-inline-end: 16px;
+			}
+		</style>
+		<script type="text/javascript" src="../jquery-3.5.1.js"></script>
+		<script type="text/javascript" src="scripts/jquery.auto-grow-input.js"></script>
+		<!-- <script type="text/javascript" src="scripts/test-script.js"></script> -->
+		<script type="text/javascript" src="scripts/script-webstorage-api.js"></script>
+	</head>
+	<body>
+		<div class="nav">
+			<a href="webstorage-api.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="#" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+		</div>
+
+		<div class="progress-bar">
+			<font class="white-text">Прогресс завершения курса:</font>
+			<br>
+			<progress value="78" max="100"></progress>
+		</div>
+
+		<form>
+			<h3>1. Какие виды веб-хранения данных есть в HTML5? (можно выбрать несколько вариантов ответа)</h3>
+			<label id="l1">
+				<input type="checkbox" name="radio1" id="r1" class="group1">
+					<font id="f1">
+						userStorage
+					</font>
+			</label>
+			<label id="l2">
+				<input type="checkbox" name="radio1" id="r2" class="group1">
+					<font id="f2">
+						htmlStorage
+					</font>
+			</label>
+			<label id="l3">
+				<input type="checkbox" name="radio1" id="r3" class="group1">
+					<font id="f3">
+						sessionStorage
+					</font>
+			</label>
+			<label id="l4">
+				<input type="checkbox" name="radio1" id="r4" class="group1">
+					<font id="f4">
+						localStorage
+					</font>
+			</label>
+
+			<br>
+
+			<h3>2. Какая распространённая альтернатива WebStorage API?</h3>
+			<div class="InputsTaskDiv">
+				<span style="padding-left: 16px;">
+					<input type="text" id="firstinput" class="inputtextarea" maxlength="6"><font style="font-size: 20px"><font color="#ffffff" class="YetAnotherText">-файлы</font></font>
+				</span>
+			</div>
+			<span class="span-hint" style="padding-left: 0px;">
+				<br>
+				<div class="InputsTaskDiv" style="padding-left: 16px;">
+					<font class="YetAnotherWhiteText">Правильный ответ: куки / cookie</font>
+				</div>
+			</span>
+
+			<h3>3. Данные, записанные в локальное хранилище, могут быть удалены <b>только</b> при помощи JavaScript?</h3>
+			<label id="l9">
+				<input type="radio" name="radio3" id="r9" class="group2">
+					<font id="f9">
+						Да
+					</font>
+			</label>
+			<label id="l10">
+				<input type="radio" name="radio3" id="r10" class="group2">
+					<font id="f10">
+						Нет
+					</font>
+			</label>
+
+			<br>
+			<br>
+			<br>
+
+			<div class="buttons-div">
+				<button id="CheckResult" type="button" disabled onclick="answer()">Проверить результат</button>
+				<button id="ClearInput" type="reset">Очистить</button>
+			</div>
+		</form>
+
+		<br>
+
+		<div class="nav nav-mobile">
+			<a href="webstorage-api.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="#" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+		</div>
+
+		<!-- <script src="scripts/test-script.js"></script> -->
+		<script src="scripts/script-webstorage-api.js"></script>
+	</body>
+</html>

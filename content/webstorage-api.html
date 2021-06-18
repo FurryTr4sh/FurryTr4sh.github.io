@@ -28,7 +28,7 @@
 
 			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
 
-			<a href="#" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+			<a href="test-webstorage-api.html" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
 		</div>
 
 		<div class="progress-bar">
@@ -50,7 +50,7 @@
 			</p>
 
 			<p class="p-div-middle">
-				До появления HTML5 в этих целях использовались <b class="help" title="Фрагменты данных, сохраняемых в браузере пользователя для его идентификации">куки-файлы</b>.
+				До появления HTML5 в этих целях использовались <a href="https://ru.wikipedia.org/wiki/Cookie" title="Фрагменты данных, сохраняемых в браузере пользователя для его идентификации" target="_blank" class="hint-link">куки-файлы</a>.
 			</p>
 
 			<p class="p-div-bottom">
@@ -79,7 +79,7 @@
 				<img src="../img/exclamation_mark.png" class="ex-mark">
 			</div>
 			<div class="hint-text-center">
-				Локальное хранение данных привязано к домену. Все веб-страницы, зарегистрированные на одном домене, могут хранить и получать одни и те же данные.
+				Локальное хранение данных привязано к домену. Все веб-страницы, зарегистрированные на одном <a href="https://ru.wikipedia.org/wiki/Доменное_имя" title="С одним именем сайта" target="_blank" class="hint-link">домене</a>, могут хранить и получать одни и те же данные.
 			</div>
 		</div>
 
@@ -107,7 +107,7 @@
 						В <b>сессионном</b> хранилище данные каждый раз удаляются после закрытия браузера пользователем
 					</li>
 					<li>
-						В <b>локальном</b> хранилище данные хранятся без ограничения по времени и могут быть удалены либо <font color="#ffdd00">JS</font>-скриптом, либо вручную через инструменты отладки
+						В <b>локальном</b> хранилище данные хранятся без ограничения по времени
 					</li>
 				</ul>
 			</p>
@@ -132,8 +132,11 @@
 			<p class="p-div-top" style="padding-bottom: 0em;">
 				Для локального и сессионного веб-хранения используются очень простые и похожие правила синтаксиса.
 			</p>
-			<p class="p-div-bottom" style="padding-top: 0em;">
+			<p class="p-div-middle">
 				Данные сохраняются в виде пары <b>ключ/значение</b>.
+			</p>
+			<p class="p-div-bottom">
+				Т. к. взаимодействие с локальным хранилищем браузера происходит посредством языка <font color="#ffdd00">JavaScript</font>, нижеприведённый код следует помещать внутри тегов <b>&lt<b class="help-tag" title="Используется для встраивания или подключения исполняемого JavaScript кода">script</b>&gt</b> ... <b>&lt/<b class="help-tag" title="Используется для встраивания или подключения исполняемого JavaScript кода">script</b>&gt</b>.
 			</p>
 		</div>
 
@@ -146,6 +149,7 @@
 		</div>
 
 		<br>
+
 		<div class="div-p">
 			<p class="p-div-top">
 				Найти и взаимодействовать (изменять, удалять и т. д.) ключ и значение можно как методами <font color="#ffdd00">JavaScript</font>, так и вручную через инструменты разработчика (клавиша вызова по умолчанию – <b class="help" title="Аналогичное сочетание клавиш – Ctrl + Shift + I">F12</b>).
@@ -158,26 +162,28 @@
 			<img src="../img/29_localStorage.png" class="image-1">
 		</div>
 
-		<br>
-
-		<!--
-
 		<p>
-			Пример:
+			Извлечение значения:
 		</p>
 
 		<div class="code">
-			Статус: &lt<font class="tags">progress</font> <font class="attr">value</font>=<font class="attr-value">"35"</font> <font class="attr">max</font>=<font class="attr-value">"100"</font>&gt&lt/<font class="tags">progress</font>&gt
+			localStorage.<font class="style">getItem</font>(<font class="attr-value">"key1"</font>);
 		</div>
 
-		<br>
-
 		<p>
-			Результат:
+			Удаление значения:
 		</p>
 
-		<div class="img-container">
-			<img src="../img/28_progress.png" class="content-img">
+		<div class="code">
+			localStorage.<font class="style">removeItem</font>(<font class="attr-value">"key1"</font>);
+		</div>
+
+		<p>
+			Удаление всех значений:
+		</p>
+
+		<div class="code">
+			localStorage.<font class="style">clear</font>();
 		</div>
 
 		<br>
@@ -187,14 +193,11 @@
 				<img src="../img/exclamation_mark.png" class="ex-mark">
 			</div>
 			<div class="hint-text-center">
-				Динамическое заполнение полоски прогресса можно реализовать при помощи языка <font color="#ffdd00">JavaScript</font>.
+				Такой же синтаксис используется и для сессионного хранения, с одним лишь отличием: вместо <b class="help" title="Позволяет получить доступ к Storage объекту">localStorage()</b> используется <b class="help" title="Позволяет получить доступ к объекту Storage текущей сессии">sessionStorage()</b>.
 			</div>
 		</div>
 
 		<br>
-
-		-->
-
 		<br>
 
 		<div class="nav">
@@ -202,7 +205,7 @@
 
 			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
 
-			<a href="#" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+			<a href="test-webstorage-api.html" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
 		</div>
 
 		<script src="scripts/themes-switch.js"></script>

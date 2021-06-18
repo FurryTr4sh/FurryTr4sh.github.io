@@ -6,7 +6,7 @@ $(function() {	// До тех пор, пока все radio не будут от
   	});
 
     var groups = $.grep(arr, function(v, k) {
-        return $.inArray(v ,arr) === k;
+        return $.inArray(v, arr) === k;
 	}).length;
 
 	radios.on('change', function () {
@@ -35,6 +35,19 @@ $(function() { // Кнопка сброса выбранных radio будет 
 	var checked_radios = $('input[type="radio"]');
 	var amount_of_checked = checked_radios.length;
 });
+
+function jumpToNext(x) {   // При заполнении текстового поля перейти к следующему
+    var ml = ~~x.getAttribute('maxlength');
+    if (ml && x.value.length >= ml) {
+        do {
+            x = x.nextSibling;
+        }
+        while (x && !(/text/.test(x.type)));
+        if (x && /text/.test(x.type)) {
+            x.focus();
+        }
+    }
+}
 
 if (localStorage.getItem("ui") !== null) {
 	// Если в localStorage есть элемент, то включена светлая тема

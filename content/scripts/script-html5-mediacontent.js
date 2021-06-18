@@ -1,6 +1,33 @@
 var arr = ['1', '7', '8'];  // Массив правильных вариантов ответа
-var correctAnswers
-var correctInput = "progressvalue25";
+var correctAnswers;
+var correctInput1 = "progress";
+var correctInput2 = "value";
+var correctInput3 = "25";
+
+// Поле ввода будет расти в зависимости от ширины символов
+$('#firstinput').autoGrowInput({ 
+	minWidth: 78, maxWidth: 114
+});
+$('#firstinput').autoGrowInput({
+	minWidth: 78, maxWidth: function() {
+		return $('.InputsTaskDiv').width()-22;
+	}, comfortZone: 0
+});
+$(window).resize(function() {
+	$('#firstinput').trigger('autogrow');
+});
+
+$('#secondinput').autoGrowInput({ 
+	minWidth: 48, maxWidth: 65
+});
+$('#secondinput').autoGrowInput({
+	minWidth: 48, maxWidth: function() {
+		return $('.InputsTaskDiv').width()-22;
+	}, comfortZone: 0
+});
+$(window).resize(function() {
+	$('#secondinput').trigger('autogrow');
+});
 
 function answer() {  // Функция подсчёта количества правильных ответов
 	correctAnswers = 0;
@@ -13,23 +40,48 @@ function answer() {  // Функция подсчёта количества п�
 		}
 	}
 
-		var str1 = $("#firstinput").val();
-		var str2 = $("#secondinput").val();
-		var str3 = $("#thirdinput").val();
-		if (str1+str2+str3 == correctInput) {
-			correctAnswers++;
-		}
-
-	if (correctAnswers <= 1) {
-		alert('Правильных ответов: '+correctAnswers+' из 4. Оценка 2');
+	var str1 = $("#firstinput").val();
+	var str2 = $("#secondinput").val();
+	var str3 = $("#thirdinput").val();
+	var str1 = str1.toLowerCase();
+	var str2 = str2.toLowerCase();
+	if (str1 == correctInput1) {
+		$('#firstinput').css('border-color', '#2ce20d');
+		correctAnswers++;
 	}
-	else if (correctAnswers < 1) {
-		alert('Правильных ответов: '+correctAnswers+' из 4. Оценка 3');
+	else {
+		$('#firstinput').css('border-color', 'red');
+	}
+	if (str2 == correctInput2) {
+		$('#secondinput').css('border-color', '#2ce20d');
+		correctAnswers++;
+	}
+	else {
+		$('#secondinput').css('border-color', 'red');
+	}
+	if (str3 == correctInput3) {
+		$('#thirdinput').css('border-color', '#2ce20d');
+		correctAnswers++;
+	}
+	else {
+		$('#thirdinput').css('border-color', 'red');
+	}
+	
+
+	if (correctAnswers <= 2) {
+		alert('Правильных ответов: '+correctAnswers+' из 6. Оценка 2');
 	}
 	else if (correctAnswers == 3) {
-		alert('Правильных ответов: '+correctAnswers+' из 4. Оценка 4');
+		alert('Правильных ответов: '+correctAnswers+' из 6. Оценка 3');
 	}
-	else if (correctAnswers == 4) {
-		alert('Правильных ответов: '+correctAnswers+' из 4. Оценка 5');
+	else if (correctAnswers <= 5) {
+		alert('Правильных ответов: '+correctAnswers+' из 6. Оценка 4');
+	}
+	else if (correctAnswers == 6) {
+		alert('Правильных ответов: '+correctAnswers+' из 6. Оценка 5');
 	}
 }
+
+$('#CheckResult').on('click', function() {
+	$('.span-hint').css('display', 'block');
+});

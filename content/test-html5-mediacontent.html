@@ -12,23 +12,29 @@
 			.navlink {
 				font-size: 21px;
 			}
-			.inputtextarea {
-				width: 53px;
+			.inputtextarea1 {
+				width: 78px;
 				color: #f92468;
 				background-color: black;
 			}
 			.inputtextarea2 {
-				width: 33px;
+				width: 48px;
 				color: #a6e228;
 				background-color: black;
 			}
 			.inputtextarea3 {
-				width: 15px;
+				width: 23px;
 				color: #e7c855;
 				background-color: black;
 			}
+			.InputsTaskDiv {
+				background-color: #181818;
+				display: inline-block;
+				padding-inline-end: 16px;
+			}
 		</style>
 		<script type="text/javascript" src="../jquery-3.5.1.js"></script>
+		<script type="text/javascript" src="scripts/jquery.auto-grow-input.js"></script>
 		<script type="text/javascript" src="scripts/test-script.js"></script>
 		<script type="text/javascript" src="scripts/script-html5-mediacontent.js"></script>
 	</head>
@@ -48,33 +54,24 @@
 		</div>
 
 		<form>
-			<h3>1. Какой из атрибутов <b>не является</b> атрибутом тега audio/video?</h3>
-			<label id="l1">
-				<input type="radio" name="radio1" id="r1">
-					<font id="f1">
-						repeat
-					</font>
-			</label>
-			<label id="l2">
-				<input type="radio" name="radio1" id="r2">
-					<font id="f2">
-						src
-					</font>
-			</label>
-			<label id="l3">
-				<input type="radio" name="radio1" id="r3">
-					<font id="f3">
-						autoplay
-					</font>
-			</label>
-			<label id="l4">
-				<input type="radio" name="radio1" id="r4">
-					<font id="f4">
-						controls
-					</font>
-			</label>
-
-			<br>
+			<h3>1. Заполните пробелы в коде полосы прогресса, чтобы шкала показывала 25% заполненности:</h3>
+			<div class="InputsTaskDiv">
+				<span style="padding-left: 16px;">
+					<font class="YetAnotherWhiteText">&lt</font>
+					<input type="text" id="firstinput" class="inputtextarea inputtextarea1" maxlength="8" onkeyup="jumpToNext(this);">
+					<input type="text" id="secondinput" class="inputtextarea inputtextarea2" maxlength="5" onkeyup="jumpToNext(this);">
+					<font class="YetAnotherWhiteText">=</font><font class="font20 YellowTestFont">"</font>
+					<input type="text" id="thirdinput" class="inputtextarea inputtextarea3" maxlength="2" onkeyup="jumpToNext(this);">
+					<font class="font20 YellowTestFont">"</font>
+					&nbsp <font class="font20 GreenTestFont">max</font><font class="YetAnotherWhiteText">=</font><font class="font20 YellowTestFont">"100"</font><font class="YetAnotherWhiteText">&gt</font>
+				</span>
+			</div>
+			<span class="span-hint" style="padding-left: 0px;">
+				<br>
+				<div class="InputsTaskDiv" style="padding-left: 16px;">
+					<font class="YetAnotherWhiteText">Правильный ответ:</font> <font class="YetAnotherWhiteText">&lt</font><font color="#f92468">progress</font> <font color="#a6e228">value</font><font class="YetAnotherWhiteText">=</font><font color="#e7c855">"25"</font> <font color="#a6e228">max</font><font class="YetAnotherWhiteText">=</font><font color="#e7c855">"100"</font><font class="YetAnotherWhiteText">&gt</font>
+				</div>
+			</span>
 
 			<h3>2. Выберите все правильные варианты, как можно указать путь к аудиофайлу:</h3>
 			<label id="l5">
@@ -121,164 +118,34 @@
 					</font>
 			</label>
 
-			<br>
-
-			<h3>3. Заполните пробелы в коде полосы прогресса, чтобы шкала показывала 25% заполненности:</h3>
-			<span style="padding-left: 16px;">
-				<font style="font-size: 13px;">&lt</font>
-				<input type="text" id="firstinput" class="inputtextarea">
-					<span>
-						<input type="text" id="secondinput" class="inputtextarea2">
-							=<font color="#e7c855">"</font>
-						<input type="text" id="thirdinput" class="inputtextarea3">
-							<font color="#e7c855">"</font>
-					</span>
-					<span>
-						&nbsp <font color="#a6e228">max</font>=<font color="#e7c855">"100"</font><font style="font-size: 13px;">&gt</font>
-					</span>
-			</span>
-
-
-			<br>
-
-			<!-- <h3>ЫЫЫЫ. ВащеНеТретий вопрос</h3>
-			<label id="l9">
-				<input type="radio" name="radio3" id="r9">
-					<font id="f9">
-						111
+			<h3>3. Какой из атрибутов <b>не является</b> атрибутом тега audio/video?</h3>
+			<label id="l1">
+				<input type="radio" name="radio1" id="r1">
+					<font id="f1">
+						repeat
 					</font>
 			</label>
-			<label id="l10">
-				<input type="radio" name="radio3" id="r10">
-					<font id="f10">
-						222
+			<label id="l2">
+				<input type="radio" name="radio1" id="r2">
+					<font id="f2">
+						src
 					</font>
 			</label>
-			<label id="l11">
-				<input type="radio" name="radio3" id="r11">
-					<font id="f11">
-						333
+			<label id="l3">
+				<input type="radio" name="radio1" id="r3">
+					<font id="f3">
+						autoplay
 					</font>
 			</label>
-			<label id="l12">
-				<input type="radio" name="radio3" id="r12">
-					<font id="f12">
-						444
+			<label id="l4">
+				<input type="radio" name="radio1" id="r4">
+					<font id="f4">
+						controls
 					</font>
-			</label>
+			</label>		
 
 			<br>
-
-			<h3>4. Четвёртый вопрос</h3>
-			<label id="l13">
-				<input type="radio" name="radio4" id="r13">
-					<font id="f13">
-						111
-					</font>
-			</label>
-			<label id="l14">
-				<input type="radio" name="radio4" id="r14">
-					<font id="f14">
-						222
-					</font>
-			</label>
-			<label id="l15">
-				<input type="radio" name="radio4" id="r15">
-					<font id="f15">
-						333
-					</font>
-			</label>
-			<label id="l16">
-				<input type="radio" name="radio4" id="r16">
-					<font id="f16">
-						444
-					</font>
-			</label>
-
 			<br>
-
-			<h3>5. Пятый вопрос</h3>
-			<label id="l17">
-				<input type="checkbox" name="radio5" id="r17">
-					<font id="f17">
-						111
-					</font>
-			</label>
-			<label id="l18">
-				<input type="checkbox" name="radio5" id="r18">
-					<font id="f18">
-						222
-					</font>
-			</label>
-			<label id="l19">
-				<input type="checkbox" name="radio5" id="r19">
-					<font id="f19">
-						333
-					</font>
-			</label>
-			<label id="l20">
-				<input type="checkbox" name="radio5" id="r20">
-					<font id="f20">
-						444
-					</font>
-			</label>
-
-			<br>
-
-			<h3>6. Шестой вопрос</h3>
-			<label id="l21">
-				<input type="radio" name="radio6" id="r21">
-					<font id="f21">
-						111
-					</font>
-			</label>
-			<label id="l22">
-				<input type="radio" name="radio6" id="r22">
-					<font id="f22">
-						222
-					</font>
-			</label>
-			<label id="l23">
-				<input type="radio" name="radio6" id="r23">
-					<font id="f23">
-						333
-					</font>
-			</label>
-			<label id="l24">
-				<input type="radio" name="radio6" id="r24">
-					<font id="f24">
-						444
-					</font>
-			</label>
-
-			<br>
-
-			<h3>7. Седьмой вопрос</h3>
-			<label id="l25">
-				<input type="radio" name="radio7" id="r25">
-					<font id="f25">
-						111
-					</font>
-			</label>
-			<label id="l26">
-				<input type="radio" name="radio7" id="r26">
-					<font id="f26">
-						222
-					</font>
-			</label>
-			<label id="l27">
-				<input type="radio" name="radio7" id="r27">
-					<font id="f27">
-						333
-					</font>
-			</label>
-			<label id="l28">
-				<input type="radio" name="radio7" id="r28">
-					<font id="f28">
-						444
-					</font>
-			</label> -->
-			<br><br>
 
 			<div class="buttons-div">
 				<button id="CheckResult" type="button" disabled onclick="answer()">Проверить результат</button>
