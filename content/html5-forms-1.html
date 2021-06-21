@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="../jquery-3.5.1.js"></script>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<title>Формы в HTML5</title>
+		<style>
+			ul {
+				padding-bottom: 1em;
+				margin-top: 0px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="nav">
+			<a href="test-webstorage-api.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="html5-forms-2.html" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+		</div>
+
+		<div class="progress-bar">
+			<font class="white-text">Прогресс завершения курса:</font>
+			<br>
+			<progress value="87" max="100"></progress>
+		</div>
+
+		<div id="theme-toggler">
+			<input type="checkbox" id="switcher">
+			<label for="switcher" id="switcher-label"></label>
+		</div>
+
+		<h1>Формы в HTML5</h1>
+
+		<div class="div-p">
+			<p class="p-div-top" style="padding-bottom: 0em;">
+				HTML5 привносит много новых возможностей и совершенствований в технологию веб-форм.
+			</p>
+
+			<p class="p-div-middle">
+				С целью повышения удобства просмотра веб-страниц были разработаны и добавлены новые атрибуты и способы ввода данных.
+			</p>
+
+			<p class="p-div-bottom">
+				Синтаксис веб-форм в HTML5 такой же, какой был и в HTML4:
+			</p>
+		</div>
+
+		<br>
+
+		<div class="code">
+			&lt<font class="tags">form</font>&gt
+			<br>
+				<font class="space">&lt<font class="tags">label</font>&gtВаше имя:&lt/<font class="tags">label</font>&gt</font>
+				<br>
+				<font class="space">&lt<font class="tags">input</font> <font class="attr">id</font>=<font class="attr-value">"user"</font> <font class="attr">name</font>=<font class="attr-value">"username"</font> <font class="attr">type</font>=<font class="attr-value">"text"</font>&gt</font>
+				<br>
+			&lt/<font class="tags">form</font>&gt
+		</div>
+
+		<br>
+
+		<div class="hint">
+			<div class="div-img">
+				<img src="../img/exclamation_mark.png" class="ex-mark">
+			</div>
+			<div class="hint-text-center">
+				Используйте атрибут <b class="help-attr" title="Обычно используется, чтобы выполнить проверку через сторонний код, а не передавать ответственность за это браузеру">novalidate</b> в теге формы, чтобы избежать её проверки браузером при отправке.
+			</div>
+		</div>
+
+		<h1>Новые атрибуты</h1>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				В HTML5 появился новый атрибут заполнителя <b class="help-attr" title="Выводит текст внутри текстового поля, исчезающий при получении фокуса">placeholder</b>. В элементах <b class="tagB">&lt<b class="help-tag" title="Исп. для создания интерактивных элементов управления в формах">input</b>&gt</b> и <b class="tagB">&lt<b class="help-tag" title="Элемент формы для создания области для ввода многострочного текста">textarea</b>&gt</b> этот атрибут содержит подсказку для пользователя о том, какая информация может быть введена в данное поле.
+			</p>
+		</div>
+
+		<br>
+
+		<div class="code">
+			&lt<font class="tags">form</font>&gt
+			<br>
+				<font class="space">&lt<font class="tags">label</font> <font class="attr">for</font>=<font class="attr-value">"email"</font>&gtВаш электронный адрес:&lt/<font class="tags">label</font>&gt</font>
+				<br>
+				<font class="space">&lt<font class="tags">input</font> <font class="attr">type</font>=<font class="attr-value">"text"</font> <font class="attr">name</font>=<font class="attr-value">"email"</font> <font class="attr">placeholder</font>=<font class="attr-value">"email@example.com"</font>&gt</font>
+				<br>
+			&lt/<font class="tags">form</font>&gt
+		</div>
+
+		<p>
+			Результат:
+		</p>
+
+		<div class="img-container">
+			<img src="../img/30_placeholder.png" class="content-img">
+		</div>
+
+		<br>
+		<br>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				Атрибут <b class="help-attr" title="автофокусировка">autofocus</b> ставит курсор в нужное поле ввода, когда форма загрузится:
+			</p>
+		</div>
+
+		<br>
+
+		<div class="code">
+			&lt<font class="tags">form</font>&gt
+			<br>
+				<font class="space">&lt<font class="tags">label</font> <font class="attr">for</font>=<font class="attr-value">"email"</font>&gt
+				<br>
+					<font class="dblspace">Ваш электронный адрес:
+					<br>
+				<font class="space">&lt/<font class="tags">label</font>&gt</font></font></font>
+				<br>
+				<font class="space">&lt<font class="tags">input</font> <font class="attr">type</font>=<font class="attr-value">"text"</font> <font class="attr">name</font>=<font class="attr-value">"email"</font> <font class="attr">autofocus</font>&gt</font>
+				<br>
+			&lt/<font class="tags">form</font>&gt
+		</div>
+
+		<br>
+		<br>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				Атрибут <b class="help-attr" title="Препятствует отправке пустой формы на сервер, однако браузерную защиту легко обойти, так что не стоит всецело полагаться на один атрибут">required</b> указывает браузеру, что заполнение формы необходимо:
+			</p>
+		</div>
+
+		<br>
+
+		<div class="code">
+			&lt<font class="tags">form</font> <font class="attr">autocomplete</font>=<font class="attr-value">"off"</font>&gt
+			<br>
+				<font class="space">&lt<font class="tags">label</font> <font class="attr">for</font>=<font class="attr-value">"email"</font>&gt</font>
+				<br>
+					<font class="dblspace">Ваш электронный адрес:</font>
+					<br>
+				<font class="space">&lt/<font class="tags">label</font>&gt</font>
+				<br>
+				<font class="space">&lt<font class="tags">input</font> <font class="attr">name</font>=<font class="attr-value">"Email"</font> <font class="attr">type</font>=<font class="attr-value">"text"</font> <font class="attr">required</font>&gt</font>
+				<br>
+				<font class="space">&lt<font class="tags">input</font> <font class="attr">type</font>=<font class="attr-value">"submit"</font> <font class="attr">value</font>=<font class="attr-value">"Отправить"</font>&gt</font>
+				<br>
+			&lt/<font class="tags">form</font>&gt
+		</div>
+
+		<p>
+			Результат:
+		</p>
+
+		<div class="img-container">
+			<img src="../img/31_required.png" class="content-img">
+		</div>
+
+		<br>
+		<br>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				Атрибут <b class="help-attr" title="автозаполнение">autocomplete</b> используется для автозаполнения формы браузером в зависимости от последних введённых пользователем данных.
+			</p>
+		</div>
+
+		<br>
+
+		<h1>Новые типы ввода в HTML5</h1>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				В HTML5 добавлены новые поля ввода <b class="tags">input</b> <b class="attr">type</b>:
+			</p>
+			<ul class="ul-list">
+				<li class="help" title="Выбор календарной даты" >date</li>
+				<li class="help" title="Выбор времени">time</li>
+				<li class="help" title="Указание даты и времени">datetime</li>
+				<li class="help" title="Указание местной даты и времени">datetime-local</li>
+				<li class="help" title="Выбор месяца">month</li>
+				<li class="help" title="Выбор недели">week</li>
+				<li class="help" title="Ввод чисел">number</li>
+				<li class="help" title="Ползунок для выбора чисел в указанном диапазоне">range</li>
+				<li class="help" title="Поле поиска">search</li>
+				<li class="help" title="Электронная почта">email</li>
+				<li class="help" title="Веб-адрес">url</li>
+				<li class="help" title="Телефонный номер">tel</li>
+				<li class="help" title="Выбор цвета">color</li>
+			</ul>
+		</div>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				Новые атрибуты полей ввода в HTML5:
+			</p>
+			<ul class="ul-list">
+				<li class="help" title="Выводит текст внутри текстового поля, исчезающий при получении фокуса">placeholder</li>
+				<li class="help" title="Автофокусировка">autofocus</li>
+				<li class="help" title="Препятствует отправке пустой формы на сервер">required</li>
+				<li class="help" title="Устанавливает минимальное/максимальное значение для ввода числа или даты в поле формы">min и max</li>
+				<li class="help" title="Определяет регулярное выражение, которому должно соответствовать значение элемента формы"><a href="http://htmlbook.ru/html/input/pattern" target="_blank" class="hint-link">pattern</a></li>
+				<li class="help" title="Позволяет указывать одновременно несколько файлов в поле для загрузки файлов, а также несколько адресов электронной почты">multiple</li>
+				<li class="help" title="Устанавливает шаг изменения числа для ползунков и полей ввода чисел">step</li>
+				<li class="help" title="Связывает поле с формой по её id (необходимо в случае, когда поле располагается за пределами формы)">form</li>
+				<li class="help" title="Определяет адрес обработчика формы (аналогично атрибуту action тега формы)">formaction</li>
+				<li class="help" title="Устанавливает способ кодирования данных формы при их отправке на сервер"><a href="http://htmlbook.ru/html/input/formenctype" target="_blank" class="hint-link">formenctype</a></li>
+				<li class="help" title="Сообщает браузеру, каким методом следует передавать данные формы на сервер: через GET или POST запрос"><a href="forms.html#anchor_GET_POST" target="_blank" class="hint-link">formmethod</a></li>
+				<li class="help" title="Отменяет встроенную проверку данных введенных пользователем в форме на корректность перед отправкой формы">formnovalidate</li>
+				<li class="help" title="Определяет окно или фрейм в которое будет загружаться результат, возвращаемый обработчиком формы, в виде HTML-документа"><a href="http://htmlbook.ru/html/input/formtarget" target="_blank" class="hint-link">formtarget</a></li>
+			</ul>
+		</div>
+
+		<div class="hint">
+			<div class="div-img">
+				<img src="../img/exclamation_mark.png" class="ex-mark">
+			</div>
+			<div class="hint-text-center">
+				Поля ввода, не поддерживаемые старыми браузерами, будут восприниматься ими как поля ввода <b class="help-value" title="Простое однострочное текстовое поле">text</b>.
+			</div>
+		</div>
+
+		<br>
+		<br>
+
+		<div class="nav">
+			<a href="test-webstorage-api.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="html5-forms-2.html" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+		</div>
+
+		<script src="scripts/themes-switch.js"></script>
+	</body>
+</html>

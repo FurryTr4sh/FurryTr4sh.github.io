@@ -2,7 +2,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Промежуточный тест. Веб-хранение данных в HTML5</title>
+		<title>Промежуточный тест. Формы в HTML5</title>
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		<link rel="stylesheet" type="text/css" href="test-styles.css">
 		<style type="text/css">
@@ -12,30 +12,38 @@
 			.navlink {
 				font-size: 21px;
 			}
+			.inline-div {
+				/*background-color: #181818;*/
+				background-color: skyblue;
+				display: inline-block;
+				height: 1em;
+				width: 5em;
+			}
+			/*
 			.inputtextarea {
 				width: 40px;
 				color: #ffffff;
 				background-color: black;
 				font-size: 20px;
-			}
+			}*//*
 			.InputsTaskDiv {
 				background-color: #181818;
 				display: inline-block;
 				padding-inline-end: 16px;
-			}
+			}*/
 		</style>
 		<script type="text/javascript" src="../jquery-3.5.1.js"></script>
 		<script type="text/javascript" src="scripts/jquery.auto-grow-input.js"></script>
 		<!-- <script type="text/javascript" src="scripts/test-script.js"></script> -->
-		<script type="text/javascript" src="scripts/script-webstorage-api.js"></script>
+		<script type="text/javascript" src="scripts/script-html5-forms.js"></script>
 	</head>
 	<body>
 		<div class="nav">
-			<a href="webstorage-api.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+			<a href="html5-forms-1.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
 
 			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
 
-			<a href="html5-forms-1.html" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+			<a href="#" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
 		</div>
 
 		<div class="progress-bar">
@@ -45,7 +53,30 @@
 		</div>
 
 		<form>
-			<h3>1. Какие виды веб-хранения данных есть в HTML5? (можно выбрать несколько вариантов ответа)</h3>
+			<h3>1. Перетащите нужные варианты из представленных ниже, чтобы курсор был автоматически поставлен в поле ввода:</h3>
+
+			<div style="padding-left: 20px; font-size: 20px;">
+				&ltform&gt
+				<br>
+				&ltinput type="text name="name"&gt
+				<br>
+				<div class="inline-div"></div> = "Введите ваше имя"
+				<br>
+				&lt/form&gt
+			</div>
+
+			<br>
+			<br>
+
+			<div style="padding-left: 20px; font-size: 20px; display: inline-block;">
+				<div style="background-color: green; cursor: move;" draggable="true">test</div>
+			</div>
+
+			<br>
+			<br>
+
+			<h3>2. Вопрос</h3>
+
 			<label id="l1">
 				<input type="checkbox" name="radio1" id="r1" class="group1">
 					<font id="f1">
@@ -73,7 +104,7 @@
 
 			<br>
 
-			<h3>2. Какая распространённая альтернатива WebStorage API?</h3>
+			<h3>3. Какая распространённая альтернатива WebStorage API?</h3>
 			<div class="InputsTaskDiv">
 				<span style="padding-left: 16px;">
 					<input type="text" id="firstinput" class="inputtextarea" maxlength="6"><font style="font-size: 20px"><font color="#ffffff" class="YetAnotherText">-файлы</font></font>
@@ -86,7 +117,7 @@
 				</div>
 			</span>
 
-			<h3>3. Данные, записанные в локальное хранилище, могут быть удалены <b>только</b> при помощи JavaScript?</h3>
+			<h3>4. Данные, записанные в локальное хранилище, могут быть удалены <b>только</b> при помощи JavaScript?</h3>
 			<label id="l9">
 				<input type="radio" name="radio3" id="r9" class="group2">
 					<font id="f9">
@@ -113,14 +144,14 @@
 		<br>
 
 		<div class="nav nav-mobile">
-			<a href="webstorage-api.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+			<a href="html5-forms-1.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
 
 			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
 
-			<a href="html5-forms-1.html" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+			<a href="#" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
 		</div>
 
 		<!-- <script src="scripts/test-script.js"></script> -->
-		<script src="scripts/script-webstorage-api.js"></script>
+		<script src="scripts/script-html5-forms.js"></script>
 	</body>
 </html>

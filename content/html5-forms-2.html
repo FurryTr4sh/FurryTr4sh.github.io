@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="../jquery-3.5.1.js"></script>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<title>Формы в HTML5</title>
+<!-- 		<style>
+			ul {
+				padding-bottom: 1em;
+				margin-top: 0px;
+			}
+		</style> -->
+	</head>
+	<body>
+		<div class="nav">
+			<a href="html5-forms-1.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="#" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+		</div>
+
+		<div class="progress-bar">
+			<font class="white-text">Прогресс завершения курса:</font>
+			<br>
+			<progress value="90" max="100"></progress>
+		</div>
+
+		<div id="theme-toggler">
+			<input type="checkbox" id="switcher">
+			<label for="switcher" id="switcher-label"></label>
+		</div>
+
+		<h1>Создаём окно поиска</h1>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				Новый тип поля ввода <b class="help-attr" title="поиск">search</b> служит для создания окна поиска:
+			</p>
+		</div>
+
+		<br>
+
+		<div class="code">
+			&lt<font class="tags">form</font>&gt
+			<br>
+				<font class="space">&lt<font class="tags">input</font> <font class="attr">name</font>=<font class="attr-value">"searchitem"</font> <font class="attr">type</font>=<font class="attr-value">"search"</font>&gt</font>
+				<br>
+				<font class="space">&lt<font class="tags">input</font> <font class="attr">type</font>=<font class="attr-value">"submit"</font> <font class="attr">value</font>=<font class="attr-value">"Найти"</font>&gt</font>
+				<br>
+			&lt/<font class="tags">form</font>&gt
+		</div>
+
+		<p>
+			Результат:
+		</p>
+
+		<div class="img-container">
+			<img src="../img/32_search.png" class="content-img">
+		</div>
+
+		<br>
+
+		<div class="hint">
+			<div class="div-img">
+				<img src="../img/exclamation_mark.png" class="ex-mark">
+			</div>
+			<div class="hint-text-center">
+				Не забудьте указать атрибут <b class="help-attr" title="имя">name</b> для <b class="tagB">&lt<b class="help-tag" title="ввод">input</b>&gt</b>; в противном случае ничего не будет отправлено.
+			</div>
+		</div>
+
+		<h1>Параметры поиска</h1>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				Тег <b class="tagB">&lt<b class="help-tag" title="Список вариантов, которые можно выбирать при наборе в текстовом поле">datalist</b>&gt</b> может быть использован, чтобы задать список предопределённых параметров поиска:
+			</p>
+		</div>
+
+		<br>
+
+		<div class="code">
+			&lt<font class="tags">form</font>&gt
+			<br>
+				<font class="space">&lt<font class="tags">input</font> <font class="attr">id</font>=<font class="attr-value">"car"</font> <font class="attr">type</font>=<font class="attr-value">"text"</font> <font class="attr">list</font>=<font class="attr-value">"colors"</font>&gt</font>
+				<br>
+				<font class="space">&lt<font class="tags">datalist</font> <font class="attr">id</font>=<font class="attr-value">"colors"</font>&gt</font>
+				<br>
+				<font class="dblspace">&lt<font class="tags">option</font> <font class="attr">value</font>=<font class="attr-value">"Красный"</font>&gt</font>
+				<br>
+				<font class="dblspace">&lt<font class="tags">option</font> <font class="attr">value</font>=<font class="attr-value">"Зелёный"</font>&gt</font>
+				<br>
+				<font class="dblspace">&lt<font class="tags">option</font> <font class="attr">value</font>=<font class="attr-value">"Жёлтый"</font>&gt</font>
+				<br>
+				<font class="space">&lt/<font class="tags">datalist</font>&gt</font>
+				<br>
+				<font class="space">&lt<font class="tags">input</font> <font class="attr">type</font>=<font class="attr-value">"reset"</font>&gt</font>
+				<br>
+			&lt/<font class="tags">form</font>&gt
+		</div>
+
+		<p>
+			Результат:
+		</p>
+
+		<div class="img-container">
+			<img src="../img/33_datalist.png" class="content-img">
+		</div>
+
+		<br>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				С помощью <b class="tagB">&lt<b class="help-tag" title="Определяет отдельные пункты списка">option</b>&gt</b> создаются варианты выбора, которые будут предложены пользователю в выпадающем списке.
+			</p>
+		</div>
+
+		<br>
+
+		<div class="hint">
+			<div class="div-img">
+				<img src="../img/exclamation_mark.png" class="ex-mark">
+			</div>
+			<div class="hint-text-center">
+				ID элемента <b class="tagB">&lt<b class="help-tag" title="Список вариантов, которые можно выбирать при наборе в текстовом поле">datalist</b>&gt</b> должен совпадать с атрибутом <b class="attr">list</b> в элементе <b class="tagB">&lt<b class="help-tag" title="Ввод">input</b>&gt</b>.
+			</div>
+		</div>
+
+		<!-- <h1>Создаём другие поля</h1>
+
+		<div class="div-p">
+			<p class="p-div-top">
+				Среди других новых типов полей ввода – 
+			</p>
+		</div> -->
+
+		<br>
+		<br>
+
+		<div class="nav">
+			<a href="html5-forms-1.html" class="navlink"><div class="navBlock">⇐ Назад</div></a>
+
+			<a href="../index.html" class="navlink"><div class="navBlock">В главное меню</div></a>
+
+			<a href="#" class="navlink"><div class="navBlock">Продолжить ⇒</div></a>
+		</div>
+
+		<script src="scripts/themes-switch.js"></script>
+	</body>
+</html>
