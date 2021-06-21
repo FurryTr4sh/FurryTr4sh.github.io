@@ -32,11 +32,48 @@
 				display: inline-block;
 				padding-inline-end: 16px;
 			}
+			.div-center {
+				align-content: space-between;
+				align-items: center;
+				flex-direction: column;
+				height: 300px;
+				background-color: #292929;
+				padding: 5px;
+			}
+			.div-block {
+				height: 25%;
+				width: 100%;
+				background-color: #636396;
+				border: solid 1px;
+				cursor: move;
+				text-align: center;
+			}
+			p {
+				font-family: monospace;
+				font-size: 20px;
+			}
 		</style>
 		<script type="text/javascript" src="../jquery-3.5.1.js"></script>
 		<script type="text/javascript" src="scripts/jquery.auto-grow-input.js"></script>
 		<script type="text/javascript" src="scripts/test-script.js"></script>
 		<script type="text/javascript" src="scripts/script-html5-mediacontent.js"></script>
+		<script type="text/javascript" src="../jquery-ui-1.12.1/jquery-ui.min.js"></script>
+		<script src="../jquery-ui-1.12.1/jquery.ui.touch-punch.js"></script>
+		<script>
+			$(function() {
+				$(".div-center").sortable({
+					axis: "y"
+				});
+			});
+
+			$(function() {
+				var parent = $(".div-center");
+				var divs = parent.children();
+				while (divs.length) {
+					parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+				}
+			});
+		</script>
 	</head>
 	<body>
 		<div class="nav">
@@ -118,7 +155,23 @@
 					</font>
 			</label>
 
-			<h3>3. Какой из атрибутов <b>не является</b> атрибутом тега audio/video?</h3>
+			<h3>3. Переставьте код так, чтобы составить правильный тег video и чтобы браузер пытался сначала воспроизвести файл формата mp4:</h3>
+			<div class="div-center">
+				<div class="div-block" id="f">
+					<p>&lt<font class="tags">video</font> <font class="attr">controls</font>&gt</p>
+				</div>
+				<div class="div-block" id="s">
+					<p>&lt<font class="tags">source</font> <font class="attr">src</font>=<font class="attr-value">"a.mp4"</font> <font class="attr">type</font>=<font class="attr-value">"video/mp4"</font>&gt</p>
+				</div>
+				<div class="div-block" id="t">
+					<p>&lt<font class="tags">source</font> <font class="attr">src</font>=<font class="attr-value">"a.ogg"</font> <font class="attr">type</font>=<font class="attr-value">"video/ogg"</font>&gt</p>
+				</div>
+				<div class="div-block" id="l">
+					<p>&lt/<font class="tags">video</font>&gt</p>
+				</div>
+			</div>
+
+			<h3>4. Какой из атрибутов <b>не является</b> атрибутом тега audio/video?</h3>
 			<label id="l1">
 				<input type="radio" name="radio1" id="r1">
 					<font id="f1">
