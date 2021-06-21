@@ -4,6 +4,9 @@ var correctInput1 = "progress";
 var correctInput2 = "value";
 var correctInput3 = "25";
 
+var test = "";
+var blocks_answer = "fstl";
+
 // Поле ввода будет расти в зависимости от ширины символов
 $('#firstinput').autoGrowInput({ 
 	minWidth: 78, maxWidth: 114
@@ -66,19 +69,34 @@ function answer() {  // Функция подсчёта количества п�
 	else {
 		$('#thirdinput').css('border-color', 'red');
 	}
+
+
+	$(".div-block.ui-sortable-handle").each(function() {
+		test = test + $(this).attr('id');
+	});
+
+	if (test == blocks_answer) {
+		console.log(test);
+		console.log("Правильно");
+		correctAnswers++;
+	}
+	else {
+		console.log(test);
+		console.log("Неправильно");
+	}
 	
 
 	if (correctAnswers <= 2) {
-		alert('Правильных ответов: '+correctAnswers+' из 6. Оценка 2');
+		alert('Правильных ответов: '+correctAnswers+' из 7. Оценка 2');
 	}
 	else if (correctAnswers == 3) {
-		alert('Правильных ответов: '+correctAnswers+' из 6. Оценка 3');
+		alert('Правильных ответов: '+correctAnswers+' из 7. Оценка 3');
 	}
-	else if (correctAnswers <= 5) {
-		alert('Правильных ответов: '+correctAnswers+' из 6. Оценка 4');
+	else if (correctAnswers >= 4 && correctAnswers <= 6) {
+		alert('Правильных ответов: '+correctAnswers+' из 7. Оценка 4');
 	}
-	else if (correctAnswers == 6) {
-		alert('Правильных ответов: '+correctAnswers+' из 6. Оценка 5');
+	else if (correctAnswers == 7) {
+		alert('Правильных ответов: '+correctAnswers+' из 7. Оценка 5');
 	}
 }
 
